@@ -1,5 +1,4 @@
 <?php
-session_start();
 if(isset($_SESSION["uid"])){
 
     header("location: ./users");
@@ -37,6 +36,17 @@ include './nav.php';
                 <button type="submit" class="px-6 py-2 bg-orange-500 text-white rounded-md font-bold text-center text-lg uppercase">Register</button>
                 <p class="text-center font-medium">Alrady have an account?<a class="mx-2 text-orange-500 hover:text-blue-800 transition-all " href="./login.php">Login</a></p>
             </div>
+            <?php 
+            
+            if(isset($_SESSION['userexist'])){
+                echo '<p style="color: red" class="text-center text-red-500 font-semibold">'.$_SESSION['userexist'].'</p>';
+                unset($_SESSION['userexist']);
+            }elseif(isset($_SESSION['passnotmatch'])){
+                echo '<p style="color: red" class="text-center text-red-500 font-semibold">'.$_SESSION['passnotmatch'].'</p>';
+                unset($_SESSION['passnotmatch']);
+            }
+            
+            ?>
         </form>
     </div>
 </section>

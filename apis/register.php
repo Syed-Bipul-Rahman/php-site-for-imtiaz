@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 
 include './connection.php';
 
@@ -21,6 +21,7 @@ $checkquery = "SELECT * FROM `users` WHERE `email`='$email'";
 $raw = mysqli_query($conn, $checkquery);
 $count = mysqli_num_rows($raw);
 if ($count > 0) {
+    $_SESSION['userexist'] = "User already exist";
     header("location: ../register.php");
 } else {
 
@@ -28,9 +29,11 @@ if ($count > 0) {
     //if password doesnot match then it will give  a warning
 
     if ($pass != $password_confirm) {
+        $_SESSION['passnotmatch'] = "Password does not match";
         header("location: ../register.php");
     } else {
         if (strlen($pass) < 6) {
+            $_SESSION['passnotmatch'] = "Password must be at least 6 characters";
             header("location: ../register.php");
         } else {
             $haspass = md5($pass);
@@ -40,6 +43,7 @@ if ($count > 0) {
             $result = $conn->query($query);
 
             if ($result == 1) {
+            $_SESSION['uid'] = $email;
                 header("location: ../users");
             }
         }
