@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/28381dd01b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/solid.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+
+<body style="font-family: 'Rajdhani', sans-serif;">
+    <nav id="nav" class="flex w-full px-0 py-0 xs:py-1 sm:py-2 md:py-3 justify-between bg-white items-center fixed xs:px-2 sm:px-4 md:px-8 lg:px-12 xl:20">
+        <img class="h-10" src="./logo.png" alt="">
+        <div class="flex">
+            <div class="lg:hidden my-2 md:my-1">
+                <i class="fa-solid fa-user bg-orange-500 text-white p-2 md:p-3 mx-1 xs:mx-2 rounded-md"></i>
+                <i style="border: 1px solid rgb(249 115 22 );" class="fa-solid md:p-3 fa-bars p-2 rounded-md"></i>
+            </div>
+            <ul class="items-center text-lg hidden lg:flex">
+                <li class="mx-4 font-bold flex items-center hover:text-orange-600 h-10 drop"><a href="">Courses</a>
+                    <i class="fa-solid fa-chevron-down ml-1"></i>
+                    <ul class="absolute rounded-md border-orange-600 w-28 z-10 bg-white mt-36 sdrop shadow-xl truncate transition-all h-0">
+                        <li class="px-3 py-1 text-black hover:text-orange-600 di1"><a href="">Androded</a>
+                            <ul class="rounded-md border-t-2 bg-white border-orange-600 z-10 absolute -mt-8 text-black hidden dis1 shadow-xl">
+                                <li class="px-3 py-1 hover:text-orange-600"><a href="">Season 1</a></li>
+                                <hr>
+                                <li class="px-3 py-1 hover:text-orange-600"><a href="">Season 2</a></li>
+                            </ul>
+                        </li>
+                        <hr>
+                        <li class="px-3 py-1 text-black hover:text-orange-600 di1"><a href="">Androded</a>
+                            <ul class="rounded-md bg-white border-t-2 border-orange-600 z-10 absolute -mt-8 text-black hidden dis1 shadow-xl">
+                                <li class="px-3 py-1 hover:text-orange-600"><a href="">Season 3</a></li>
+                                <hr>
+                                <li class="px-3 py-1 hover:text-orange-600"><a href="">Season 4</a></li>
+                            </ul>
+                        </li>
+                        <hr>
+                        <li class="px-3 py-1 text-black hover:text-orange-600 di1"><a href="">Androded</a>
+                            <ul class="rounded-md border-t-2 bg-white border-orange-600 z-10 absolute -mt-8 text-black hidden dis1 shadow-xl">
+                                <li class="px-3 py-1 hover:text-orange-600"><a href="">Season 5</a></li>
+                                <hr>
+                                <li class="px-3 py-1 hover:text-orange-600"><a href="">Season 6</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mx-4 font-bold hover:text-orange-600"> <a href="">Webinars</a> </li>
+                <li class="mx-4 font-bold hover:text-orange-600"> <a href="">Blog</a> </li>
+                <li class="mx-4 font-bold hover:text-orange-600"> <a href="">About Us</a> </li>
+                <li class="mx-4 font-bold hover:text-orange-600"> <a href="">Contact</a> </li>
+                <li class="mx-4 font-bold hover:text-orange-600 cursor-pointer text-2xl flex"><i
+                        class="fa-solid fa-cart-shopping"></i>
+                    <div class="h-5 w-5 bg-orange-500 rounded-full -ml-1 -mt-2 flex items-center justify-center text-sm text-white">5</div>
+                </li>
+            </ul>
+            <div class="hidden ml-8 px-6 bg-orange-500 py-2 rounded items-center font-semibold text-white lg:flex">
+                <a class="border-r-2 px-3 hover:text-black" href="">Login</a>
+                <a class="px-3 hover:text-black" href="">Register</a>
+            </div>
+        </div>
+        <script>
+            window.addEventListener("scroll", () => {
+            document.getElementById("nav").classList.toggle('scroll', window.scrollY > 0)
+            });
+        </script>
+    </nav>
+    <header class="w-full flex justify-center items-center flex-col pb-12 pt-20 sm:pb-16 sm:pt-24 md:pb-24 md:pt-32 lg:pb-28 lg:pt-36 xl:pb-32 xl:pt-40">
+        <h1 class="text-4xl font-bold text-white my-6 sm:text-5xl">Our Courses</h1>
+        <p class="text-white text-lg font-semibold">Home > Courses</p>
+    </header>
+    <section class="px-0 xs:px-2 sm:px-6 lg:px-20 my-20 lg:flex lg:justify-between">
+        <div class="lg:w-2/3">
+            <div class="flex lg:items-center flex-col lg:flex-row">
+                <div class="flex items-center">
+                    <div
+                    class="rounded-full w-12 h-12 bg-orange-600 mr-4 text-white flex justify-center items-center text-xl font-semibold">
+                    A</div>
+                <p class="text-slate-600 font-medium mr-1">By</p>
+                <a class="text-xl font-semibold hover:text-orange-500" href="">Amir</a>
+                </div>
+                
+                <div class="flex my-4 lg:my-0"><span class="text-orange-400 text-lg lg:ml-4">
+                    <i class="uis uis-star"></i><i class="uis uis-star"></i><i class="uis uis-star"></i>
+                    <i class="uis uis-star"></i><i class="uil uil-star"></i>
+                </span>
+                <h4 class="mx-4 font-semibold">4.00</h4>
+                <p class="text-slate-600 font-medium">(11 Ratings)</p></div>
+                <div class="flex"><i class="uil uil-bookmark lg:ml-12 mr-4 text-lg font-semibold cursor-pointer hover:text-orange-500">
+                    Wishlist</i>
+                <i class="uil uil-share text-lg font-semibold cursor-pointer hover:text-orange-500"> share</i></div>
+            </div>
+            <div class="inline-grid sm:flex items-center mb-8 mt-4">
+                <h4 class="text-slate-600 mr-2">Categories:</h4>
+                <div
+                    class="py-2 px-4 bg-slate-100 hover:bg-orange-600 text-slate-500 hover:text-white rounded-md cursor-pointer m-2">
+                    Marketing</div>
+                <div
+                    class="py-2 px-4 bg-slate-100 hover:bg-orange-600 text-slate-500 hover:text-white rounded-md cursor-pointer m-2">
+                    Development</div>
+                <div
+                    class="py-2 px-4 bg-slate-100 hover:bg-orange-600 text-slate-500 hover:text-white rounded-md cursor-pointer m-2">
+                    Business</div>
+            </div>
+            <div class="flex">
+                <p class="mx-4 font-medium leading-10 border-b-2 cursor-pointer border-orange-500 text-orange-500">Course Info</p>
+                <p class="mx-4 font-medium leading-10 cursor-pointer">Reviews</p>
+            </div>
+            <hr>
+            <h5 class="my-4 text-lg font-bold mx-1">Student Ratings & Reviews</h5>
+            <div style="border: 1px solid rgb(153, 153, 153);" class="rounded-lg mb-8">
+                <div style="border-bottom: 1px solid rgb(153, 153, 153);" class="p-4 md:p-8 flex-col">
+                    <div class="md:mr-12 md:w-1/4 md:flex flex-col justify-center md:justify-start items-center">
+                        <h1 class="text-8xl font-bold">4.0</h1>
+                        <span class="text-orange-400 text-xl my-4">
+                            <i class="uis uis-star"></i><i class="uis uis-star"></i><i class="uis uis-star"></i>
+                            <i class="uis uis-star"></i><i class="uil uil-star"></i>
+                        </span>
+                        <p class="text-slate-600">Total 2 Ratings</p>
+                    </div>
+                    <div class="md:w-3/4">
+                        <div class="flex items-center my-2">
+                            <i class="uil uil-star mx-2 text-orange-600"></i>
+                            <p class="font-bold">5</p>
+                            <div class="w-80 h-2 rounded-lg overflow-hidden mx-4 relative bg-slate-200">
+                                <span class="bg-orange-500 w-2/3 h-2 absolute"></span>
+                            </div>
+                            <p class="mx-4 font-medium text-lg">1 Rating</p>
+                        </div>
+                        <div class="flex items-center my-2">
+                            <i class="uil uil-star mx-2 text-orange-600"></i>
+                            <p class="font-bold">5</p>
+                            <div class="w-80 h-2 rounded-lg overflow-hidden mx-4 relative bg-slate-200">
+                                <span class="bg-orange-500 w-2/3 h-2 absolute"></span>
+                            </div>
+                            <p class="mx-4 font-medium text-lg">1 Rating</p>
+                        </div>
+                        <div class="flex items-center my-2">
+                            <i class="uil uil-star mx-2 text-orange-600"></i>
+                            <p class="font-bold">5</p>
+                            <div class="w-80 h-2 rounded-lg overflow-hidden mx-4 relative bg-slate-200">
+                                <span class="bg-orange-500 w-2/3 h-2 absolute"></span>
+                            </div>
+                            <p class="mx-4 font-medium text-lg">1 Rating</p>
+                        </div>
+                        <div class="flex items-center my-2">
+                            <i class="uil uil-star mx-2 text-orange-600"></i>
+                            <p class="font-bold">5</p>
+                            <div class="w-80 h-2 rounded-lg overflow-hidden mx-4 relative bg-slate-200">
+                                <span class="bg-orange-500 w-2/3 h-2 absolute"></span>
+                            </div>
+                            <p class="mx-4 font-medium text-lg">1 Rating</p>
+                        </div>
+                        <div class="flex items-center my-2">
+                            <i class="uil uil-star mx-2 text-orange-600"></i>
+                            <p class="font-bold">5</p>
+                            <div class="w-80 h-2 rounded-lg overflow-hidden mx-4 relative bg-slate-200">
+                                <span class="bg-orange-500 w-2/3 h-2 absolute"></span>
+                            </div>
+                            <p class="mx-4 font-medium text-lg">1 Rating</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-8 flex justify-between">
+                    <div class="flex flex-col justify-center items-center w-1/5">
+                        <div class="rounded-full w-12 h-12 bg-orange-600 text-white flex justify-center items-center text-xl font-semibold">A</div>
+                        <a class="text-xl font-semibold hover:text-orange-500 my-4" href="">Amir</a>
+                        <p class="text-slate-600 font-medium">9 months ago</p>
+                    </div>
+                    <div class="w-3/4 pl-4">
+                        <span class="text-orange-400 text-lg">
+                            <i class="uis uis-star"></i><i class="uis uis-star"></i><i class="uis uis-star"></i>
+                            <i class="uis uis-star"></i><i class="uil uil-star"></i>
+                        </span>
+                        <p>I truly enjoyed this class and really liked the student-professor interaction. ... The more I learn today, the less risky moves I will make in the future.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <aside class="lg:w[30%]">
+            <div class="rounded-xl overflow-hidden w-full shadow-xl">
+                <iframe class="w-full" src="https://www.youtube.com/embed/yGDwk4z9EEg" frameborder="0"></iframe>
+                <div class="p-4">
+                    <p class="text-3xl my-2 font-bold">Free</p>
+                    <h4 class="w-full text-center py-3 bg-orange-500 text-xl font-bold rounded-lg text-white my-4">Enroll Now</h4>
+                    <p class="text-slate-600 text-center font-medium">Free access this course</p>
+                </div>
+                <hr>
+                <div class="p-4 grid grid-cols-2">
+                    <div class="flex text-slate-600 font-medium my-1">
+                        <i class="uil uil-signal mx-2"></i>
+                        <p>Level</p>
+                    </div>
+                    <p class="font-medium my-1">All Levels</p>
+                    <div class="flex text-slate-600 font-medium my-1">
+                        <i class="uil uil-graduation-cap mx-2"></i>
+                        <p>Total</p>
+                    </div>
+                    <p class="font-medium my-1">37 Enrolled</p>
+                    <div class="flex text-slate-600 font-medium my-1">
+                        <i class="uil uil-clock mx-2"></i>
+                        <p>Duration</p>
+                    </div>
+                    <p class="font-medium my-1">07 hours 28 minutes</p>
+                    <div class="flex text-slate-600 font-medium my-1">
+                        <i class="uil uil-sync mx-2"></i>
+                        <p>Last Updated</p>
+                    </div>
+                    <p class="font-medium my-1">March 19, 2022</p>
+                    <div class="flex text-slate-600 font-medium my-1">
+                        <i class="uil uil-book-open mx-2"></i>
+                        <p>Lessons</p>
+                    </div>
+                    <p class="font-medium my-1">10 Lessons</p>
+                </div>
+            </div>
+            <div class="rounded-xl overflow-hidden w-full shadow-xl p-6 my-8">
+                <h5 class="my-4 text-xl font-bold mx-1">Course Content</h5>
+                <ul class="list-disc text-lg list-inside">
+                    <li>7.5 hours on-demand video</li>
+                    <li>10 articles</li>
+                    <li>31 downloadable resources</li>
+                    <li>Full lifetime access</li>
+                    <li>Access on mobile and TV</li>
+                    <li>Certificate of Completion</li>
+                </ul>
+            </div>
+        </aside>
+    </section>
+    <footer style="background-color: #0e0a38;" class="w-full px-0 xs:px-2 sm:px-6 lg:px-20 text-white text-xl font-bold">
+        <div class="py-20 lg:flex">
+            <div class="px-6">
+                <img class="h-10" src="./logo.png" alt="">
+                <p class="my-4">We are providing high-quality online courses for about ten years. Our all instructors expert and highly experienced. We provide all kinds of course materials to our students</p>
+                <p>Follow Us</p>
+            </div>
+            <div class="w-full rounded-xl px-6">
+                <h3 class="text-2xl my-4 font-bold">Recent Posts</h3>
+                <div class="flex items-center">
+                    <img class="h-24 w-24 rounded-md" src="https://demo.omexer.com/main/wp-content/uploads/sites/3/2021/04/blog-5-1200x600.jpg" alt="">
+                    <div class="p-4">
+                        <a href="" class="font-bold text-sm mb-3 hover:text-orange-500 transition-all">Learn Webs Applications Development from Experts</a>
+                        <p class="text-xs text-slate-500">April 1, 2021</p>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full rounded-xl flex flex-col font-bold px-6">
+                <h3 class="text-2xl my-4">Categories</h3>
+                <a class="hover:text-orange-500 my-2" href=""><i class="uil uil-angle-right mx-2 text-orange-500"></i>Business</a>
+                <a class="hover:text-orange-500 my-2" href=""><i class="uil uil-angle-right mx-2 text-orange-500"></i>Courses</a>
+                <a class="hover:text-orange-500 my-2" href=""><i class="uil uil-angle-right mx-2 text-orange-500"></i>Education</a>
+                <a class="hover:text-orange-500 my-2" href=""><i class="uil uil-angle-right mx-2 text-orange-500"></i>Graphics Design</a>
+                <a class="hover:text-orange-500 my-2" href=""><i class="uil uil-angle-right mx-2 text-orange-500"></i>Programming</a>
+                <a class="hover:text-orange-500 my-2" href=""><i class="uil uil-angle-right mx-2 text-orange-500"></i>Web Design</a>
+            </div>
+            <div class="w-full font-bold px-6">
+                <h3 class="text-2xl my-4">Contact Us</h3>
+                <p class="my-6"><i class="uil uil-location-pin-alt text-orange-500 m-4"></i>119/A, Mount View, London</p>
+                <p class="my-6"><i class="uil uil-envelope-alt text-orange-500 m-4"></i>support@example.com</p>
+                <p class="my-6"><i class="uil uil-phone-volume text-orange-500 m-4"></i>+8802343546654</p>
+            </div>
+        </div>
+        <p style="border-top: 1px solid rgb(102, 101, 101);" class="py-4 text-center w-full font-sans font-medium text-white text-xl">© Copy 2021. All Rights Reserved</p>
+    </footer>
+    <script>
+        var a = document.getElementById("aboutc");
+        var b = document.getElementById("icon").classList;
+        document.getElementById("show").addEventListener("click", () => {
+            if (a.classList[0] == 'h-20') {
+                a.classList.remove("h-20");
+                b.remove("uil-plus");
+                b.add("uil-minus");
+            }else{
+                a.classList.add("h-20");
+                b.add("uil-plus");
+                b.remove("uil-minus");
+            }
+        });
+        document.getElementById("ro").addEventListener("click",()=>{
+            if (document.getElementById("al").classList[5]=='-rotate-90') {
+                document.getElementById("al").classList.remove("-rotate-90");
+                document.getElementById("op").classList.add("h-14");
+            }else{
+                document.getElementById("al").classList.add("-rotate-90");
+                document.getElementById("op").classList.remove("h-14");
+            }
+        });
+    </script>
+</body>
+
+</html>
