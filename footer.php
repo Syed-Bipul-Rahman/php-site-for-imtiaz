@@ -76,7 +76,7 @@ echo 'Catagory found';
             </div>
         </div>
     </div>
-    <p class="py-4 border-t border-gray-600 text-center w-full font-sans font-medium text-white text-xl">© Copy 2021.
-        All Rights Reserved <a style="color:#f97316" href="https://facebook.com/sohoz.learning.1">Sohoz Learning</a></p>
+    <p class="py-4 border-t border-gray-600 text-center w-full font-sans font-medium text-white text-xl">&copy; Copy <?php echo date('Y');
+?>        All Rights Reserved <a style="color:#f97316" href="https://facebook.com/sohoz.learning.1">Sohoz Learning</a></p>
 </footer>
 <script src="./maine.js"></script>
