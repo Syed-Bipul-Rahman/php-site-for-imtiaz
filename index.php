@@ -265,7 +265,7 @@ $conn->close();
         <div class="w-3/5 p-3 sha rounded-3xl hidden lg:block"><img loading="lazy" class="w-full rounded-xl"
                 src="https://demo.omexer.com/main/wp-content/uploads/sites/3/2019/05/course-11.jpg" alt=""></div>
     </section> -->
-<section class="w-full px-0 xs:px-2 sm:px-6 lg:px-20 my-20 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<!-- <section class="w-full px-0 xs:px-2 sm:px-6 lg:px-20 my-20 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
     <div class="text-center">
         <h2 class="text-orange-600 font-medium my-2">POPULAR QUESTIONS</h2>
         <h3 class="text-4xl font-bold mb-6">Frequently Asked Questions</h3>
@@ -349,9 +349,9 @@ $conn->close();
             </div>
         </div>
     </div>
-</section>
-<section class="w-full px-0 xs:px-2 sm:px-6 lg:px-20 my-20 lg:flex lg:justify-between lg:items-center">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+</section> -->
+<!-- <section class="w-full px-0 xs:px-2 sm:px-6 lg:px-20 my-20 lg:flex lg:justify-between lg:items-center"> -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
     <div class="swiper mySwiper">
         <div class="swiper-wrapper">
             <div class="swiper-slide flex p-6">
@@ -481,13 +481,13 @@ $conn->close();
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script> -->
 
     <!-- Initialize Swiper -->
-    <script>
+    <!-- <script>
         var swiper = new Swiper(".mySwiper", {
             slidesPerView: 1,
             spaceBetween: 0,
@@ -501,9 +501,9 @@ $conn->close();
             },
             loop: true,
         });
-    </script>
+    </script> -->
 
-</section>
+<!-- </section> -->
 <section class="w-full py-20 px-0 xs:px-2 sm:px-6 lg:px-20 my-20 grid grid-cols-1 lg:grid-cols-2 gap-12 bg-purple-50">
     <img loading="lazy" class="rounded-3xl"
         src="https://demo.omexer.com/main/wp-content/uploads/sites/3/2021/11/live-webinar-img.jpg" alt="">
