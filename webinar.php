@@ -26,7 +26,7 @@ if ($result->num_rows > 0) {
             <p class="mx-4"><i class="uil uil-clock mx-1 text-orange-500"></i><?php echo $row["time"]; ?></p>
             <p><i class="fa-solid fa-ticket text-orange-500 mx-1"></i>Free</p>
         </div>
-        <a href="">
+        <a href="./register.php">
             <div class="px-8 py-4 rounded-lg text-white bg-orange-600 hover:bg-blue-900">FREE REGISTRATION</div>
         </a>
     </div>
@@ -84,7 +84,7 @@ document.getElementById("second").innerHTML=seconds;
 //echo "id: " . $row["nofcourse"]. " - Name: " . $row["course_catagory"]. " " . $row["course_title"]. $row["page_link"]. "<br>";
 }
 } else {
-echo "0 results";
+echo "no data";
 }
 $conn->close();
 ?>
@@ -92,33 +92,61 @@ $conn->close();
 <section class="px-0 xs:px-2 sm:px-6 lg:px-20 my-20">
     <h2 class="my-4 text-4xl font-bold text-center lg:text-start">What You Will Learn</h2>
     <div class="grid lg:grid-cols-2 gap-6">
+
+<?php
+$getidv=base64_decode(urldecode($_GET['webnearxyz']));
+include('./apis/connection.php');
+//SELECT * FROM `learning_topics` ORDER BY `attrack_point_t` ASC
+$sqliiii1 = "SELECT * FROM `webneartopics` WHERE `webnear_id`=$getidv;";
+
+$result = $conn->query($sqliiii1);
+
+if ($result->num_rows > 0) {
+    // output data of each row
+    while ($row = $result->fetch_assoc()) {
+
+?>
+
         <div class="flex items-center">
             <i class="uil uil-check text-orange-600 mx-2 text-2xl"></i>
-            <p>Understand the fundamentals of healthy dieting (calories, protein, carbs, fat, vitamins & minerals)</p>
+            <p><?php echo $row["topics_o"]; ?></p>
+        </div>
+        
+        <div class="flex items-center">
+            <i class="uil uil-check text-orange-600 mx-2 text-2xl"></i>
+            <p><?php echo $row["topics_on"]; ?></p>
         </div>
         <div class="flex items-center">
             <i class="uil uil-check text-orange-600 mx-2 text-2xl"></i>
-            <p>Understand the fundamentals of healthy dieting (calories, protein, carbs, fat, vitamins & minerals)</p>
+            <p><?php echo $row["topics_one"]; ?></p>
         </div>
         <div class="flex items-center">
             <i class="uil uil-check text-orange-600 mx-2 text-2xl"></i>
-            <p>Understand the fundamentals of healthy dieting (calories, protein, carbs, fat, vitamins & minerals)</p>
+            <p><?php echo $row["topics_tw"]; ?></p>
         </div>
         <div class="flex items-center">
             <i class="uil uil-check text-orange-600 mx-2 text-2xl"></i>
-            <p>Understand the fundamentals of healthy dieting (calories, protein, carbs, fat, vitamins & minerals)</p>
+            <p><?php echo $row["topics_two"]; ?></p>
         </div>
         <div class="flex items-center">
             <i class="uil uil-check text-orange-600 mx-2 text-2xl"></i>
-            <p>Understand the fundamentals of healthy dieting (calories, protein, carbs, fat, vitamins & minerals)</p>
+            <p><?php echo $row["topics_t"]; ?></p>
         </div>
-        <div class="flex items-center">
-            <i class="uil uil-check text-orange-600 mx-2 text-2xl"></i>
-            <p>Understand the fundamentals of healthy dieting (calories, protein, carbs, fat, vitamins & minerals)</p>
-        </div>
+
+        <?php
+
+//echo "id: " . $row["nofcourse"]. " - Name: " . $row["course_catagory"]. " " . $row["course_title"]. $row["page_link"]. "<br>";
+}
+} else {
+echo "0 results";
+echo $getidv=base64_decode(urldecode($_GET['webnearxyz']));
+}
+$conn->close();
+?>
+        
     </div>
 </section>
-<section class="px-0 xs:px-2 sm:px-6 lg:px-20 my-20 text-center lg:text-start">
+<!-- <section class="px-0 xs:px-2 sm:px-6 lg:px-20 my-20 text-center lg:text-start">
     <h2 class="my-4 text-4xl font-bold">Key Topic We Will Cover</h2>
     <ul class="grid lg:grid-cols-2 gap-6 list-disc px-8">
         <li>
@@ -142,7 +170,7 @@ $conn->close();
                 ullamcorper mattis, pulvinar dapibus leo.</p>
         </li>
     </ul>
-</section>
+</section> -->
 <!-- <section class="py-16px-0 xs:px-2 sm:px-6 lg:px-20 my-20 md:grid-cols-2 xl:grid-cols-4 grid">
         <h2 class="my-4 text-4xl font-bold md:col-span-2 xl:col-span-4">Speakers</h2>
         <div class="p-2 flex flex-col justify-center items-center rounded-md hover:shadow-lg">
@@ -166,7 +194,7 @@ $conn->close();
             <p>Instructor</p>
         </div>
     </section> -->
-<section class="px-0 xs:px-2 sm:px-6 lg:px-20 my-20">
+<!-- <section class="px-0 xs:px-2 sm:px-6 lg:px-20 my-20">
     <h2 class="my-4 text-4xl font-bold col-span-4">Free Registration Form</h2>
     <form style="box-shadow: 0px 0px 16px 0px #d1d0d0;" class="grid gap-4 grid-cols-2 w-full p-6 rounded-xl">
         <div class="col-span-2 lg:col-span-1">
@@ -199,7 +227,7 @@ $conn->close();
                 type="submit">Submit</button></div>
 
     </form>
-</section>
+</section> -->
 <section class="px-0 xs:px-2 sm:px-6 lg:px-20 my-20 grid grid-cols-1 lg:grid-cols-2 gap-10">
     <h2 class="my-4 text-4xl font-bold col-span-1 lg:col-span-2">Upcoming Webinars</h2>
     <?php
