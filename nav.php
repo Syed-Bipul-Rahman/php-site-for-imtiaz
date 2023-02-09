@@ -39,31 +39,31 @@ session_start();
                     <i class="fa-solid fa-chevron-down ml-1"></i>
                     <ul
                         class="absolute rounded-md border-orange-600 w-28 z-10 bg-white mt-36 sdrop shadow-xl truncate transition-all h-0">
-                        <li class="px-3 py-1 text-black hover:text-orange-600 di1"><a href="">Androded</a>
-                            <ul
+                        <li class="px-3 py-1 text-black hover:text-orange-600 di1"><a href="">Android</a>
+                            <!-- <ul
                                 class="rounded-md border-t-2 bg-white border-orange-600 z-10 absolute -mt-8 text-black hidden dis1 shadow-xl">
                                 <li class="px-3 py-1 hover:text-orange-600"><a href="">Season 1</a></li>
                                 <hr>
                                 <li class="px-3 py-1 hover:text-orange-600"><a href="">Season 2</a></li>
-                            </ul>
+                            </ul> -->
                         </li>
                         <hr>
-                        <li class="px-3 py-1 text-black hover:text-orange-600 di1"><a href="">Androded</a>
-                            <ul
+                        <li class="px-3 py-1 text-black hover:text-orange-600 di1"><a href="">Graphices</a>
+                            <!-- <ul
                                 class="rounded-md bg-white border-t-2 border-orange-600 z-10 absolute -mt-8 text-black hidden dis1 shadow-xl">
                                 <li class="px-3 py-1 hover:text-orange-600"><a href="">Season 3</a></li>
                                 <hr>
                                 <li class="px-3 py-1 hover:text-orange-600"><a href="">Season 4</a></li>
-                            </ul>
+                            </ul> -->
                         </li>
                         <hr>
-                        <li class="px-3 py-1 text-black hover:text-orange-600 di1"><a href="">Androded</a>
-                            <ul
+                        <li class="px-3 py-1 text-black hover:text-orange-600 di1"><a href="">Digital Marketing</a>
+                            <!-- <ul
                                 class="rounded-md border-t-2 bg-white border-orange-600 z-10 absolute -mt-8 text-black hidden dis1 shadow-xl">
                                 <li class="px-3 py-1 hover:text-orange-600"><a href="">Season 5</a></li>
                                 <hr>
                                 <li class="px-3 py-1 hover:text-orange-600"><a href="">Season 6</a></li>
-                            </ul>
+                            </ul> -->
                         </li>
                     </ul>
                 </li>
