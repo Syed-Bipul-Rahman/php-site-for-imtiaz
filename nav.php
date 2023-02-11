@@ -1,6 +1,5 @@
 <?php
 session_start();
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -94,7 +93,7 @@ session_start();
                             </div>'; 
                             }else {
                                 echo '<div class="hidden ml-8 px-6 bg-orange-500 py-2 rounded items-center font-semibold text-white lg:flex">
-                                <a class="border-r-2 px-3 hover:text-black" href="./users">Dashbord</a>
+                                <a class="border-r-2 px-3 hover:text-black" href="./user/dist">Dashbord</a>
                                 <a class="px-3 hover:text-black" href="./apis/logout.php">Logout</a>
                             </div>';
                             }
@@ -165,10 +164,12 @@ session_start();
                                         href="./register.php">Register</a></div>
                             </div>'; 
                             }else {
-                                echo '<div class="hidden ml-8 px-6 bg-orange-500 py-2 rounded items-center font-semibold text-white lg:flex">
-                                <a class="border-r-2 px-3 hover:text-black" href="./login.php">Dashbord</a>
-                                <a class="px-3 hover:text-black" href="./register.php">Logout</a>
-                            </div>';
+                                echo '<div style="position: absolute;bottom: 0;" class="font-semibold text-white w-full text-2xl p-6 text-center">
+                                <div class="px-4 py-2 bg-orange-500 my-2 rounded-3xl"><a class="hover:text-black"
+                                        href="./user/dist/">Dashbord</a></div>
+                                <div class="px-4 py-2 bg-orange-500 my-2 rounded-3xl"><a class="hover:text-black"
+                                        href="./apis/logout.php">Logout</a></div>
+                            </div>'; 
                             }
                             ?>
             

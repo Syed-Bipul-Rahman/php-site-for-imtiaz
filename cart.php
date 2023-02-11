@@ -86,7 +86,7 @@ if (isset($_GET['ocuourse'])) {
                     }
                     $conn->close();
     ?>
-    <a href=""><button class="py-4 px-6 bg-orange-500 text-white hover:bg-blue-900 font-bold rounded-md w-full my-2">PROCEED TO
+    <a href="./possiblecheckout.php"><button class="py-4 px-6 bg-orange-500 text-white hover:bg-blue-900 font-bold rounded-md w-full my-2">PROCEED TO
             CHECKOUT</button></a>
         </div>
     </section>

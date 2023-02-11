@@ -5,24 +5,17 @@ include './connection.php';
 
 //email,password,phone,division,district,upazila,area,fullname,bloodgroup,lasstdonationdate
 
-
-
-
 $name = $_POST['name'];
 $email = $_POST['email'];
-
-
 $pass = $_POST['pass'];
 $password_confirm = $_POST['password_confirm'];
 
 //isUserExist?
-$checkquery = "SELECT * FROM `users` WHERE `email`='$email'";
-
-$raw = mysqli_query($conn, $checkquery);
-$count = mysqli_num_rows($raw);
-if ($count > 0) {
+$checkquery = "SELECT * FROM `users` WHERE `email`=$email";
+$result = $conn->query($checkquery);
+if ($result->num_rows > 0) {
     $_SESSION['userexist'] = "User already exist";
-    header("location: ../register.php");
+   exit(header("location: ../register.php"));
 } else {
 
 

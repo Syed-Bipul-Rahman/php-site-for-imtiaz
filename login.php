@@ -1,9 +1,11 @@
 <?php
+ob_start();
 include 'nav.php';
+ob_end_clean();
 if(isset($_SESSION["uid"])){
-
-   header("location: ./users");
-  
+ // User is already logged in, redirect to the home page
+    header("Location: ./");
+    exit();
   }
 
 require './apis/connection.php';
@@ -19,8 +21,9 @@ if (isset($_POST['sub'])) {
         while ($row = $result->fetch_assoc()) {
             
             $_SESSION["uid"]=$email;
-
-            echo "<script>window.location.href='./users';</script>";
+           // $_SESSION['email'] = $email;
+            echo "<script>window.location.href='./user/dist/';</script>";
+            exit();
         } 
    } else {
     $_SESSION["errorlogin"]="User name or Password Incorrect";
@@ -28,7 +31,6 @@ if (isset($_POST['sub'])) {
    $conn->close();
 }
 ?>
-
 <section class="px-0 xs:px-2 sm:px-6 lg:px-20 py-20 flex justify-center">
     <div style="box-shadow: 3px 2px 19px #7e7979;" class="xs:p-4 sm:p-6 md:p-8 lg:p-12 lg:w-2/5 rounded-xl">
         <h1 class="text-3xl font-bold my-6">Hi, Welcome back!</h1>

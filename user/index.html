@@ -28,22 +28,22 @@
             <h1 class="text-2xl">name</h1>
         </div>
     </section>
-    <section class="px-0 xs:px-2 sm:px-6 lg:px-20 flex">
-        <ul class="w-[20%] border-r border-slate-300 py-8 text-lg font-medium">
-            <li class="py-2 my-1 rounded-l-md bg-orange-500 text-white"><i class="uil text-xl uil-dashboard mx-2"></i>Dashboard</li>
-            <li class="py-2 my-1 rounded-l-md hover:bg-orange-200"><i class="uil text-xl uil-user mx-2"></i>My Profile</li>
-            <li class="py-2 my-1 rounded-l-md hover:bg-orange-200"><i class="uil text-xl uil-graduation-cap mx-2"></i>Enrolled Courses</li>
+    <section class="px-0 xs:px-2 sm:px-6 lg:px-20 lg:flex">
+        <ul class="lg:w-[20%] w-full border-r border-slate-300 py-8 text-lg font-medium">
+            <li class="py-2 cursor-pointer my-1 rounded-l-md bg-orange-500 text-white"><i class="uil text-xl uil-dashboard mx-2"></i>Dashboard</li>
+            <li class="py-2 cursor-pointer my-1 rounded-l-md hover:bg-orange-200"><i class="uil text-xl uil-user mx-2"></i>My Profile</li>
+            <li class="py-2 cursor-pointer my-1 rounded-l-md hover:bg-orange-200"><i class="uil text-xl uil-graduation-cap mx-2"></i>Enrolled Courses</li>
 
-            <li class="py-2 my-1 rounded-l-md hover:bg-orange-200"><i class="uil text-xl uil-star mx-2"></i>Reviews</li>
-            <li class="py-2 my-1 rounded-l-md hover:bg-orange-200"><i class="uil text-xl uil-shield-question mx-2"></i>My Quiz</li>
+            <li class="py-2 cursor-pointer my-1 rounded-l-md hover:bg-orange-200"><i class="uil text-xl uil-star mx-2"></i>Reviews</li>
+            <li class="py-2 cursor-pointer my-1 rounded-l-md hover:bg-orange-200"><i class="uil text-xl uil-shield-question mx-2"></i>My Quiz</li>
 
-            <li class="py-2 my-1 rounded-l-md hover:bg-orange-200"><i class="uil text-xl uil-question mx-2"></i>Question & Answer</li>
+            <li class="py-2 cursor-pointer my-1 rounded-l-md hover:bg-orange-200"><i class="uil text-xl uil-question mx-2"></i>Question & Answer</li>
             <hr>
-            <li class="py-2 my-1 rounded-l-md hover:bg-orange-200"><i class="uil uil-signout text-xl mx-2"></i>Logout</li>
+            <li class="py-2 cursor-pointer my-1 rounded-l-md hover:bg-orange-200"><i class="uil uil-signout text-xl mx-2"></i>Logout</li>
         </ul>
-        <div id="dashboard" class="p-6 w-[80%] aso">
+        <div id="dashboard" class="py-6 lg:p-6 lg:w-[80%] w-full aso">
             <h1 class="text-2xl font-bold">Dashboard</h1>
-            <div class="grid grid-cols-3 gap-4 my-8">
+            <div class="grid lg:grid-cols-3 gap-4 my-8">
                 <div class="p-6 border border-slate-300 rounded-lg text-center">
                     <div
                         class="rounded-full h-16 w-16 mx-auto text-orange-500 bg-orange-50 flex justify-center items-center">
@@ -72,10 +72,10 @@
 
             <h1 class="text-2xl font-bold">In Progress Courses</h1>
             <div class="my-8">
-                <div class="my-4 border border-slate-300 rounded-lg flex items-center justify-between">
-                    <img class="w-[35%]"
+                <div class="my-4 border border-slate-300 rounded-lg lg:flex items-center justify-between">
+                    <img class="lg:w-[35%]"
                         src="https://demo.omexer.com/main/wp-content/uploads/sites/3/2019/05/course-11.jpg" alt="">
-                    <div class="w-[65%] p-6">
+                    <div class="lg:w-[65%] p-6">
                         <p><span class="text-orange-400 text-lg mx-2">
                                 <i class="uis uis-star"></i><i class="uis uis-star"></i><i class="uis uis-star"></i>
                                 <i class="uis uis-star"></i><i class="uil uil-star"></i>
@@ -92,9 +92,9 @@
                 </div>
             </div>
         </div>
-        <div id="profile" class="p-6 w-[80%] hidden aso">
+        <div id="profile" class="lg:p-6 lg:w-[80%] hidden aso">
             <h1 class="text-2xl font-bold">My Profile</h1>
-            <div class="flex">
+            <div class="flex justify-between lg:justify-start">
                 <div class="w-[25%]">
                     <p class="text-lg my-4 font-medium">Registration Date</p>
                     <p class="text-lg my-4 font-medium">First Name</p>
@@ -117,14 +117,9 @@
                 </div>
             </div>
         </div>
-        <div id="enrolled" class="p-6 w-[80%] hidden aso">
+        <div id="enrolled" class="lg:p-6 lg:w-[80%] hidden aso">
             <h1 class="text-2xl font-bold">Enrolled Courses</h1>
-            <div class="flex text-lg py-2 my-4 border-b border-slate-300">
-                <p class="mx-6">Enrolled Courses (2)</p>
-                <p class="mx-6">Active Courses (2)</p>
-                <p class="mx-6">Completed Courses</p>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:grid-cols-3">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:grid-cols-3 my-8">
                 <div class="rounded-xl overflow-hidden border border-slate-300">
                     <a href="./course.php?courseid=somthing&amp;joybanglacourseidxyz=Mw==&amp;coursename=something"><img
                             loading="lazy" class="w-full"
@@ -151,9 +146,9 @@
                                 <div class="w-[70%] h-1 bg-orange-400 rounded-full"></div>
                             </div>
                         </div>
-                        <div
+                        <a href=""
                             class="border border-orange-500 rounded-lg text-lg font-semibold mt-4 flex items-center justify-center text-orange-500 py-2 hover:bg-orange-500 hover:text-white">
-                            Start Learning</div>
+                            Start Learning</a>
                     </div>
                 </div>
                 <div class="rounded-xl overflow-hidden border border-slate-300">
@@ -182,28 +177,15 @@
                                 <div class="w-[70%] h-1 bg-orange-400 rounded-full"></div>
                             </div>
                         </div>
-                        <div
+                        <a href=""
                             class="border border-orange-500 rounded-lg text-lg font-semibold mt-4 flex items-center justify-center text-orange-500 py-2 hover:bg-orange-500 hover:text-white">
-                            Start Learning</div>
+                            Start Learning</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <script>
-        // function user(id) {
-        //     var ids = ['dashboard','profile','enrolled','reviews','quiz','qna'];
-        //     for (let i = 0; i < ids.length; i++) {
-        //         var nue= document.getElementById(ids[i]);
-        //        console.log(ids[i]);
-
-        //         // if (nue.classList.contains('hidden') == false) {
-        //         //     nue.classList.add('hidden');
-        //         // }
-                
-        //     }
-        //     document.getElementById(id).classList.remove('hidden');
-        // }
         const classList = document.querySelectorAll(".my-1");
         const aso = document.querySelectorAll(".aso");
 

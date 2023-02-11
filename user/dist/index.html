@@ -17,11 +17,11 @@
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/solid.css">
     
     <title>Sohoz Learning</title>
-  <link rel="stylesheet" href="./assets/index-f25032f8.css">
+  <link rel="stylesheet" href="./assets/index-c3acd361.css">
 </head>
 
 <body style="font-family: 'Rajdhani', sans-serif;">
-    <section class="px-0 xs:px-2 sm:px-6 lg:px-32 pt-20 flex items-center border border-b-slate-300">
+    <section class="px-0 xs:px-2 sm:px-6 lg:px-20 pt-20 flex items-center border border-b-slate-300">
         <img class="rounded-full m-8" height="100px" width="100px"
             src="https://demo.omexer.com/main/wp-content/uploads/sites/3/2022/11/OIP-1-150x150.jpg" alt="">
         <div>
@@ -29,52 +29,54 @@
             <h1 class="text-2xl">name</h1>
         </div>
     </section>
-    <section class="px-0 xs:px-2 sm:px-6 lg:px-32 flex">
-        <ul class="w-[20%] border-r border-slate-300 py-8 text-lg font-medium">
-            <li class="py-2 my-1 rounded-l-md hover:bg-orange-200"><i class="uil text-xl uil-dashboard mx-2"></i>Dashboard</li>
-            <li class="py-2 my-1 rounded-l-md hover:bg-orange-200"><i class="uil text-xl uil-user mx-2"></i>My Profile</li>
-            <li class="py-2 my-1 rounded-l-md hover:bg-orange-200"><i class="uil text-xl uil-graduation-cap mx-2"></i>Enrolled
-                Courses</li>
-            <li class="py-2 my-1 rounded-l-md hover:bg-orange-200"><i class="uil text-xl uil-bookmark mx-2"></i>Wishlist</li>
-            <li class="py-2 my-1 rounded-l-md hover:bg-orange-200"><i class="uil text-xl uil-star mx-2"></i>Reviews</li>
-            <li class="py-2 my-1 rounded-l-md hover:bg-orange-200"><i class="uil text-xl uil-shield-question mx-2"></i>My Quiz
-                Attempts</li>
-            <li class="py-2 my-1 rounded-l-md hover:bg-orange-200"><i class="uil text-xl uil-shopping-cart-alt mx-2"></i>Order
-                History</li>
-            <li class="py-2 my-1 rounded-l-md hover:bg-orange-200"><i class="uil text-xl uil-question mx-2"></i>Question &
-                Answer</li>
+    <section class="px-0 xs:px-2 sm:px-6 lg:px-20 lg:flex">
+        <ul class="lg:w-[20%] w-full border-r border-slate-300 py-8 text-lg font-medium">
+            <li class="py-2 cursor-pointer my-1 rounded-l-md bg-orange-500 text-white"><i class="uil text-xl uil-dashboard mx-2"></i>Dashboard</li>
+            <li class="py-2 cursor-pointer my-1 rounded-l-md hover:bg-orange-200"><i class="uil text-xl uil-user mx-2"></i>My Profile</li>
+            <li class="py-2 cursor-pointer my-1 rounded-l-md hover:bg-orange-200"><i class="uil text-xl uil-graduation-cap mx-2"></i>Enrolled Courses</li>
+
+            <li class="py-2 cursor-pointer my-1 rounded-l-md hover:bg-orange-200"><i class="uil text-xl uil-star mx-2"></i>Reviews</li>
+            <li class="py-2 cursor-pointer my-1 rounded-l-md hover:bg-orange-200"><i class="uil text-xl uil-shield-question mx-2"></i>My Quiz</li>
+
+            <li class="py-2 cursor-pointer my-1 rounded-l-md hover:bg-orange-200"><i class="uil text-xl uil-question mx-2"></i>Question & Answer</li>
+            <hr>
+            <li class="py-2 cursor-pointer my-1 rounded-l-md hover:bg-orange-200"><i class="uil uil-signout text-xl mx-2"></i>Logout</li>
         </ul>
-        <div class="p-6 w-[80%]">
+        <div id="dashboard" class="py-6 lg:p-6 lg:w-[80%] w-full aso">
             <h1 class="text-2xl font-bold">Dashboard</h1>
-            <div class="grid grid-cols-3 gap-4 my-8">
+            <div class="grid lg:grid-cols-3 gap-4 my-8">
                 <div class="p-6 border border-slate-300 rounded-lg text-center">
-                    <div class="rounded-full h-16 w-16 mx-auto text-orange-500 bg-orange-50 flex justify-center items-center">
+                    <div
+                        class="rounded-full h-16 w-16 mx-auto text-orange-500 bg-orange-50 flex justify-center items-center">
                         <i class="uil uil-book-open text-2xl"></i>
                     </div>
                     <h4 class="text-3xl font-bold my-2">2</h4>
                     <p>Enrolled Courses</p>
                 </div>
                 <div class="p-6 border border-slate-300 rounded-lg text-center">
-                    <div class="rounded-full mx-auto h-16 w-16 text-orange-500 bg-orange-50 flex justify-center items-center">
+                    <div
+                        class="rounded-full mx-auto h-16 w-16 text-orange-500 bg-orange-50 flex justify-center items-center">
                         <i class="uil uil-graduation-cap text-2xl"></i>
                     </div>
                     <h4 class="text-3xl font-bold my-2">2</h4>
                     <p>Active Courses</p>
                 </div>
                 <div class="p-6 border border-slate-300 rounded-lg text-center">
-                    <div class="rounded-full mx-auto h-16 w-16 text-orange-500 bg-orange-50 flex justify-center items-center">
+                    <div
+                        class="rounded-full mx-auto h-16 w-16 text-orange-500 bg-orange-50 flex justify-center items-center">
                         <i class="uil uil-trophy text-2xl"></i>
                     </div>
                     <h4 class="text-3xl font-bold my-2">2</h4>
                     <p>Completed Courses</p>
                 </div>
             </div>
-            <h1 class="text-2xl font-bold">Dashboard</h1>
+
+            <h1 class="text-2xl font-bold">In Progress Courses</h1>
             <div class="my-8">
-                <div class="my-4 border border-slate-300 rounded-lg flex items-center">
-                    <img class="w-[35%]"
+                <div class="my-4 border border-slate-300 rounded-lg lg:flex items-center justify-between">
+                    <img class="lg:w-[35%]"
                         src="https://demo.omexer.com/main/wp-content/uploads/sites/3/2019/05/course-11.jpg" alt="">
-                    <div class="w-[65%] p-6">
+                    <div class="lg:w-[65%] p-6">
                         <p><span class="text-orange-400 text-lg mx-2">
                                 <i class="uis uis-star"></i><i class="uis uis-star"></i><i class="uis uis-star"></i>
                                 <i class="uis uis-star"></i><i class="uil uil-star"></i>
@@ -91,7 +93,132 @@
                 </div>
             </div>
         </div>
+        <div id="profile" class="lg:p-6 lg:w-[80%] hidden aso">
+            <h1 class="text-2xl font-bold">My Profile</h1>
+            <div class="flex justify-between lg:justify-start">
+                <div class="w-[25%]">
+                    <p class="text-lg my-4 font-medium">Registration Date</p>
+                    <p class="text-lg my-4 font-medium">First Name</p>
+                    <p class="text-lg my-4 font-medium">Last Name</p>
+                    <p class="text-lg my-4 font-medium">Username</p>
+                    <p class="text-lg my-4 font-medium">Email</p>
+                    <p class="text-lg my-4 font-medium">Phone Number</p>
+                    <p class="text-lg my-4 font-medium">Skill/Occupation</p>
+                    <p class="text-lg my-4 font-medium">Biography</p>
+                </div>
+                <div>
+                    <p class="text-lg my-4 font-semibold">June 10, 2022 10:10 pm</p>
+                    <p class="text-lg my-4 font-semibold">MR.</p>
+                    <p class="text-lg my-4 font-semibold">Bangladesh</p>
+                    <p class="text-lg my-4 font-semibold">admin</p>
+                    <p class="text-lg my-4 font-semibold">admin@admin.com</p>
+                    <p class="text-lg my-4 font-semibold">01792932818</p>
+                    <p class="text-lg my-4 font-semibold">Mobile apps Publisher</p>
+                    <p class="text-lg my-4 font-semibold">We are not hacker</p>
+                </div>
+            </div>
+        </div>
+        <div id="enrolled" class="lg:p-6 lg:w-[80%] hidden aso">
+            <h1 class="text-2xl font-bold">Enrolled Courses</h1>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:grid-cols-3 my-8">
+                <div class="rounded-xl overflow-hidden border border-slate-300">
+                    <a href="./course.php?courseid=somthing&amp;joybanglacourseidxyz=Mw==&amp;coursename=something"><img
+                            loading="lazy" class="w-full"
+                            src="https://th.bing.com/th/id/R.b695ec6c406ee257c3da38626c63d55d?rik=LmhrfS4weqpqYg&amp;pid=ImgRaw&amp;r=0"
+                            alt="Basic photography"></a>
+                    <div class="p-4">
+                        <div class="flex text-lg">
+                            <span class="text-orange-400">
+                                <i class="uis uis-star"></i><i class="uis uis-star"></i><i class="uis uis-star"></i>
+                                <i class="uis uis-star"></i><i class="uil uil-star"></i>
+                            </span>
+                            <h4 class="mx-4 font-semibold">4.5</h4>
+                            <p class="text-slate-600 font-medium">(114)</p>
+                        </div>
+                        <a href="./course.php?joybanglacourseidxyz=Mw==">
+                            <h1 class="font-bold text-xl mt-3 mb-8 hover:text-orange-500">Basic photography</h1>
+                        </a>
+                        <div>
+                            <h1 class="flex justify-between font-medium my-2">
+                                <p>0/10</p>
+                                <p>0% Complete</p>
+                            </h1>
+                            <div class="w-full h-1 bg-slate-200 rounded-full">
+                                <div class="w-[70%] h-1 bg-orange-400 rounded-full"></div>
+                            </div>
+                        </div>
+                        <a href=""
+                            class="border border-orange-500 rounded-lg text-lg font-semibold mt-4 flex items-center justify-center text-orange-500 py-2 hover:bg-orange-500 hover:text-white">
+                            Start Learning</a>
+                    </div>
+                </div>
+                <div class="rounded-xl overflow-hidden border border-slate-300">
+                    <a href="./course.php?courseid=somthing&amp;joybanglacourseidxyz=Mw==&amp;coursename=something"><img
+                            loading="lazy" class="w-full"
+                            src="https://th.bing.com/th/id/R.b695ec6c406ee257c3da38626c63d55d?rik=LmhrfS4weqpqYg&amp;pid=ImgRaw&amp;r=0"
+                            alt="Basic photography"></a>
+                    <div class="p-4">
+                        <div class="flex text-lg">
+                            <span class="text-orange-400">
+                                <i class="uis uis-star"></i><i class="uis uis-star"></i><i class="uis uis-star"></i>
+                                <i class="uis uis-star"></i><i class="uil uil-star"></i>
+                            </span>
+                            <h4 class="mx-4 font-semibold">4.5</h4>
+                            <p class="text-slate-600 font-medium">(114)</p>
+                        </div>
+                        <a href="./course.php?joybanglacourseidxyz=Mw==">
+                            <h1 class="font-bold text-xl mt-3 mb-8 hover:text-orange-500">Basic photography</h1>
+                        </a>
+                        <div>
+                            <h1 class="flex justify-between font-medium my-2">
+                                <p>0/10</p>
+                                <p>0% Complete</p>
+                            </h1>
+                            <div class="w-full h-1 bg-slate-200 rounded-full">
+                                <div class="w-[70%] h-1 bg-orange-400 rounded-full"></div>
+                            </div>
+                        </div>
+                        <a href=""
+                            class="border border-orange-500 rounded-lg text-lg font-semibold mt-4 flex items-center justify-center text-orange-500 py-2 hover:bg-orange-500 hover:text-white">
+                            Start Learning</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
+    <script>
+        const classList = document.querySelectorAll(".my-1");
+        const aso = document.querySelectorAll(".aso");
+
+classList.forEach(button => {
+  button.addEventListener("click", function() {
+    classList.forEach(btn => {
+      btn.classList.remove("bg-orange-500");
+      btn.classList.remove("text-white");
+      btn.classList.add("hover:bg-orange-200");
+    });
+    aso.forEach(div => {
+      div.classList.add("hidden");
+    });
+    this.classList.add("bg-orange-500");
+    this.classList.add("text-white");
+    this.classList.remove("hover:bg-orange-200");
+    this.textContent === "Dashboard"
+      ? document.getElementById("dashboard").classList.remove("hidden")
+      : this.textContent === "My Profile"
+      ? document.getElementById("profile").classList.remove("hidden")
+      : this.textContent === "Enrolled Courses"
+      ? document.getElementById("enrolled").classList.remove("hidden")
+      : this.textContent === "Reviews"
+      ? document.getElementById("reviews").classList.remove("hidden")
+      : this.textContent === "My Quiz"
+      ? document.getElementById("quiz").classList.remove("hidden")
+      : this.textContent === "Question & Answer"
+      ? document.getElementById("qna").classList.remove("hidden")
+      : null;
+  });
+});
+    </script>
 </body>
 
 </html>

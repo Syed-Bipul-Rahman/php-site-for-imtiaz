@@ -5,7 +5,7 @@ include './nav.php';
 
 
 ?>
-<img class="pt-20 w-full" src="./images/banner.jpeg" alt="Sohoz Learning">
+<img class="pt-20 w-full" src="./images/banner.png" alt="Sohoz Learning">
 <!-- <section class="w-full px-0 pt-12 mb-16 bag xs:px-2 sm:px-6 lg:px-20 lg:flex lg:justify-between lg:items-center lg:pt-20 lg:mb-24">
         <div class="w-full px-0 xs:px-2 text-center lg:text-start xs:pb-8 lg:w-2/4">
             <p class="font-semibold text-2xl my-6 xs:text-lg text-orange-500">START LEARNING FROM HOME</p>
