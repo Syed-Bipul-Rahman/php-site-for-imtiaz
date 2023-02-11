@@ -5,7 +5,13 @@ include './nav.php';
 
 
 ?>
-<img class="pt-20 w-full" src="./images/banner.png" alt="Sohoz Learning">
+<picture>
+  <source srcset="./images/mobilebanner.png" media="(max-width: 800px)">
+  <source srcset="./images/banner2.png">
+  <img class="pt-20 w-full" src="./images/banner2.png" alt="Flowers">
+</picture>
+
+<!-- <img class="pt-20 w-full" src="./images/mobilebanner.png" alt="Sohoz Learning"> -->
 <!-- <section class="w-full px-0 pt-12 mb-16 bag xs:px-2 sm:px-6 lg:px-20 lg:flex lg:justify-between lg:items-center lg:pt-20 lg:mb-24">
         <div class="w-full px-0 xs:px-2 text-center lg:text-start xs:pb-8 lg:w-2/4">
             <p class="font-semibold text-2xl my-6 xs:text-lg text-orange-500">START LEARNING FROM HOME</p>
@@ -510,12 +516,10 @@ $conn->close();
         src="https://demo.omexer.com/main/wp-content/uploads/sites/3/2021/11/live-webinar-img.jpg" alt="">
     <div class="text-center">
         <h2 class="text-orange-600 font-medium">LIVE WEBINAR</h2>
-        <h3 class="text-5xl font-bold my-3">Join My Upcoming Webinars</h3>
-        <p class="font-medium text-slate-600 my-2">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec
-            odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non.
+        <h3 class="text-5xl font-bold my-3">Sign Up for My Upcoming Live Webinars</h3>
+        <p class="font-medium text-slate-600 my-2">Take your professional development to the next level by joining my upcoming webinars. Our interactive online sessions, led by experts in their field, offer in-depth knowledge and practical skills to help you succeed. 
         </p>
-        <p class="font-medium text-slate-600">Donec nec justo eget felis facilisis fermentum. Aliquam porttitor
-            mauris sit amet orci. Aenean dignissim pellentesque felis.</p>
+        <p class="font-medium text-slate-600">Whether you're looking to advance your career, grow your business, or simply expand your knowledge, our webinars are the perfect opportunity. Don't miss out on this valuable learning experience – register today!</p>
         <a href="./register.php"><button
                 class="px-10 py-4 bg-orange-600 rounded-3xl my-6 font-semibold text-white hover:bg-blue-900">REGISTER
                 NOW</button></a>

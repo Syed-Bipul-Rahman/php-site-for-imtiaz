@@ -8,7 +8,7 @@ if (isset($_GET['ocuourse'])) {
     $buycourseid = base64_decode(urldecode($_GET['ocuourse']));
 
     $_SESSION['xcartcoursex'] = $buycourseid;
-} else {
+} elseif (isset($_SESSION['xcartcoursex'])) {
     $buycourseid = $_SESSION['xcartcoursex'];
 }
 
@@ -27,17 +27,18 @@ if (isset($_GET['ocuourse'])) {
                 </thead>
                 <tbody>
                     <?php
-                    include './apis/connection.php';
+                    if (isset($_SESSION['xcartcoursex'])) {
+                        include './apis/connection.php';
 
-                    $sql = "SELECT `img`,`price`,`title` FROM `new_course` WHERE `course_number`=$buycourseid";
+                        $sql = "SELECT `img`,`price`,`title` FROM `new_course` WHERE `course_number`=$buycourseid";
 
-                    $result = $conn->query($sql);
+                        $result = $conn->query($sql);
 
-                    if ($result->num_rows > 0) {
-                        // output data of each row
-                        while ($row = $result->fetch_assoc()) {
+                        if ($result->num_rows > 0) {
+                            // output data of each row
+                            while ($row = $result->fetch_assoc()) {
 
-                    ?>
+                                ?>
 
 
 
@@ -79,13 +80,13 @@ if (isset($_GET['ocuourse'])) {
 
     <?php
 
-                            //echo "id: " . $row["nofcourse"]. " - Name: " . $row["course_catagory"]. " " . $row["course_title"]. $row["page_link"]. "<br>";
+                                //echo "id: " . $row["nofcourse"]. " - Name: " . $row["course_catagory"]. " " . $row["course_title"]. $row["page_link"]. "<br>";
+                            }
+                        } else {
+                            echo "0 results";
                         }
-                    } else {
-                        echo "0 results";
-                    }
-                    $conn->close();
-    ?>
+                        $conn->close();
+                        ?>
     <a href="./possiblecheckout.php"><button class="py-4 px-6 bg-orange-500 text-white hover:bg-blue-900 font-bold rounded-md w-full my-2">PROCEED TO
             CHECKOUT</button></a>
         </div>
@@ -93,7 +94,9 @@ if (isset($_GET['ocuourse'])) {
 
    <?php
 
-
+                    } else {
+                        echo "No course in cart";
+                    }
 
 include './footer.php';
 

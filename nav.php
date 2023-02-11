@@ -38,7 +38,7 @@ session_start();
                     <i class="fa-solid fa-chevron-down ml-1"></i>
                     <ul
                         class="absolute rounded-md border-orange-600 w-28 z-10 bg-white mt-36 sdrop shadow-xl truncate transition-all h-0">
-                        <li class="px-3 py-1 text-black hover:text-orange-600 di1"><a href="">Android</a>
+                        <li class="px-3 py-1 text-black hover:text-orange-600 di1"><a href="./courses.php">Android</a>
                             <!-- <ul
                                 class="rounded-md border-t-2 bg-white border-orange-600 z-10 absolute -mt-8 text-black hidden dis1 shadow-xl">
                                 <li class="px-3 py-1 hover:text-orange-600"><a href="">Season 1</a></li>
@@ -108,23 +108,26 @@ session_start();
                 <li class="mx-4 my-4 font-semibold"><div onclick="var c=document.getElementById('cata-nav'); if(c.classList[1]=='hidden'){c.classList.remove('hidden');}else{c.classList.add('hidden')}" class="flex justify-between mr-4 items-center"><a href="./courses.php">Courses</a>
                     <i class="fa-solid fa-chevron-down ml-1"></i></div>
                     <ul id="cata-nav" class="mx-4 hidden">
-                        <li onclick="var c=document.getElementById('cata-1'); if(c.classList[1]=='hidden'){c.classList.remove('hidden');}else{c.classList.add('hidden')}" class="my-3">Android<i class="fa-solid fa-chevron-down mx-4"></i>
-                            <ul id="cata-1" class="mx-4 hidden">
+                        <li onclick="var c=document.getElementById('cata-1'); if(c.classList[1]=='hidden'){c.classList.remove('hidden');}else{c.classList.add('hidden')}" class="my-3 cursor-pointer">Android
+                        <!-- <i class="fa-solid fa-chevron-down mx-4"></i> -->
+                            <!-- <ul id="cata-1" class="mx-4 hidden">
                                 <li class="my-2">sieson-1</li>
                                 <li class="my-2">sieson-2</li>
-                            </ul>
+                            </ul> -->
                         </li>
-                        <li onclick="var c=document.getElementById('cata-2'); if(c.classList[1]=='hidden'){c.classList.remove('hidden');}else{c.classList.add('hidden')}" class="my-3">Graphice<i class="fa-solid fa-chevron-down mx-4"></i>
-                            <ul id="cata-2" class="mx-4 hidden">
+                        <li onclick="var c=document.getElementById('cata-2'); if(c.classList[1]=='hidden'){c.classList.remove('hidden');}else{c.classList.add('hidden')}" class="my-3 cursor-pointer">Graphice
+                        <!-- <i class="fa-solid fa-chevron-down mx-4"></i> -->
+                            <!-- <ul id="cata-2" class="mx-4 hidden">
                                 <li class="my-2">sieson-1</li>
                                 <li class="my-2">sieson-2</li>
-                            </ul>
+                            </ul> -->
                         </li>
-                        <li onclick="var c=document.getElementById('cata-3'); if(c.classList[1]=='hidden'){c.classList.remove('hidden');}else{c.classList.add('hidden')}" class="my-3">Markting<i class="fa-solid fa-chevron-down mx-4"></i>
-                            <ul id="cata-3" class="mx-4 hidden">
+                        <li onclick="var c=document.getElementById('cata-3'); if(c.classList[1]=='hidden'){c.classList.remove('hidden');}else{c.classList.add('hidden')}" class="my-3 cursor-pointer">Markting
+                        <!-- <i class="fa-solid fa-chevron-down mx-4"></i> -->
+                            <!-- <ul id="cata-3" class="mx-4 hidden">
                                 <li class="my-2">sieson-1</li>
                                 <li class="my-2">sieson-2</li>
-                            </ul>
+                            </ul> -->
                         </li>
                     </ul>
                    
