@@ -56,14 +56,14 @@ session_start();
                             </ul> -->
                         </li>
                         <hr>
-                        <li class="px-3 py-1 text-black hover:text-orange-600 di1"><a href="">Digital Marketing</a>
-                            <!-- <ul
+                         <!-- <li class="px-3 py-1 text-black hover:text-orange-600 di1"><a href="">Digital Marketing</a>
+                           <ul
                                 class="rounded-md border-t-2 bg-white border-orange-600 z-10 absolute -mt-8 text-black hidden dis1 shadow-xl">
                                 <li class="px-3 py-1 hover:text-orange-600"><a href="">Season 5</a></li>
                                 <hr>
                                 <li class="px-3 py-1 hover:text-orange-600"><a href="">Season 6</a></li>
-                            </ul> -->
-                        </li>
+                            </ul> 
+                        </li>-->
                     </ul>
                 </li>
                 <li class="mx-4 font-bold hover:text-orange-600"> <a href="./webinars.php">Webinars</a> </li>
