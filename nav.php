@@ -3,7 +3,6 @@ session_start();
 ?>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,11 +14,13 @@ session_start();
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
+    
     <script src="https://kit.fontawesome.com/28381dd01b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/solid.css">
     <link rel="stylesheet" href="style.css">
     <title>Sohoz Learning</title>
+ 
 </head>
 
 <body style="font-family: 'Rajdhani', sans-serif;">
@@ -47,7 +48,7 @@ session_start();
                             </ul> -->
                         </li>
                         <hr>
-                        <li class="px-3 py-1 text-black hover:text-orange-600 di1"><a href="">Graphices</a>
+                        <li class="px-3 py-1 text-black hover:text-orange-600 di1"><a href="./courses.php">Graphices</a>
                             <!-- <ul
                                 class="rounded-md bg-white border-t-2 border-orange-600 z-10 absolute -mt-8 text-black hidden dis1 shadow-xl">
                                 <li class="px-3 py-1 hover:text-orange-600"><a href="">Season 3</a></li>
@@ -108,27 +109,27 @@ session_start();
                 <li class="mx-4 my-4 font-semibold"><div onclick="var c=document.getElementById('cata-nav'); if(c.classList[1]=='hidden'){c.classList.remove('hidden');}else{c.classList.add('hidden')}" class="flex justify-between mr-4 items-center"><a href="./courses.php">Courses</a>
                     <i class="fa-solid fa-chevron-down ml-1"></i></div>
                     <ul id="cata-nav" class="mx-4 hidden">
-                        <li onclick="var c=document.getElementById('cata-1'); if(c.classList[1]=='hidden'){c.classList.remove('hidden');}else{c.classList.add('hidden')}" class="my-3 cursor-pointer">Android
+                       <a href="./courses.php"> <li onclick="var c=document.getElementById('cata-1'); if(c.classList[1]=='hidden'){c.classList.remove('hidden');}else{c.classList.add('hidden')}" class="my-3 cursor-pointer">Android
                         <!-- <i class="fa-solid fa-chevron-down mx-4"></i> -->
                             <!-- <ul id="cata-1" class="mx-4 hidden">
                                 <li class="my-2">sieson-1</li>
                                 <li class="my-2">sieson-2</li>
                             </ul> -->
-                        </li>
-                        <li onclick="var c=document.getElementById('cata-2'); if(c.classList[1]=='hidden'){c.classList.remove('hidden');}else{c.classList.add('hidden')}" class="my-3 cursor-pointer">Graphice
+                        </li></a>
+                        <a href="./courses.php"><li onclick="var c=document.getElementById('cata-2'); if(c.classList[1]=='hidden'){c.classList.remove('hidden');}else{c.classList.add('hidden')}" class="my-3 cursor-pointer">Graphics
                         <!-- <i class="fa-solid fa-chevron-down mx-4"></i> -->
                             <!-- <ul id="cata-2" class="mx-4 hidden">
                                 <li class="my-2">sieson-1</li>
                                 <li class="my-2">sieson-2</li>
                             </ul> -->
-                        </li>
-                        <li onclick="var c=document.getElementById('cata-3'); if(c.classList[1]=='hidden'){c.classList.remove('hidden');}else{c.classList.add('hidden')}" class="my-3 cursor-pointer">Markting
+                        </li></a>
+                        <!-- <li onclick="var c=document.getElementById('cata-3'); if(c.classList[1]=='hidden'){c.classList.remove('hidden');}else{c.classList.add('hidden')}" class="my-3 cursor-pointer">Markting -->
                         <!-- <i class="fa-solid fa-chevron-down mx-4"></i> -->
                             <!-- <ul id="cata-3" class="mx-4 hidden">
                                 <li class="my-2">sieson-1</li>
                                 <li class="my-2">sieson-2</li>
                             </ul> -->
-                        </li>
+                        <!-- </li> -->
                     </ul>
                    
                 </li>

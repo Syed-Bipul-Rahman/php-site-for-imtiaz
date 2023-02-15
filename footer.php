@@ -2,8 +2,7 @@
     <div class="py-20 lg:flex">
         <div class="px-4">
             <img loading="lazy" class="h-10" src="./logo2.png" alt="">
-            <p class="my-4">We are providing high-quality online courses for about ten years. Our all instructors expert
-                and highly experienced. We provide all kinds of course materials to our students</p>
+            <p class="my-4">we've been delivering top-tier e-learning courses with a team of expert instructors, providing students with a diverse array of course materials to aid in their distance learning journey.</p>
             <div class="flex items-center">
                 <p>Follow Us</p>
                 <a href=""><i style="color: #0e0a38; height: 40px;width: 40px;" class="flex items-center justify-center fa-brands text-center fa-facebook-f mx-2 bg-white rounded-full"></i></a>
