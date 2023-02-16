@@ -64,7 +64,7 @@ include './nav.php';
         $conn->close();
         ?>
 
-        <div class="w-full col-span-1 md:col-span-2 xl:col-span-3 flex justify-between items-center my-6">
+        <!-- <div class="w-full col-span-1 md:col-span-2 xl:col-span-3 flex justify-between items-center my-6">
             <p class="font-medium">Page <span>2</span> of <span>2</span></p>
             <div class="flex">
                 <div class="rounded-lg w-10 h-10 bg-slate-200 cursor-pointer hover:bg-orange-600 mx-2 hover:text-white flex justify-center items-center text-xl font-semibold"><i class="uil uil-angle-left"></i></div>
@@ -72,7 +72,7 @@ include './nav.php';
                 <div class="rounded-lg w-10 h-10 bg-slate-200 cursor-pointer hover:bg-orange-600 mx-2 hover:text-white flex justify-center items-center text-xl font-semibold">2</div>
                 <div class="rounded-lg w-10 h-10 bg-slate-200 cursor-pointer hover:bg-orange-600 mx-2 hover:text-white flex justify-center items-center text-xl font-semibold"><i class="uil uil-angle-right"></i></div>
             </div>
-        </div>
+        </div> -->
     </div>
 </section>
 <?php include './footer.php' ?>

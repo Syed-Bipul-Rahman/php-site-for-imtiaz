@@ -1,6 +1,6 @@
 <?php
 session_start();
-if (!isset($_SESSION['uid'])||!isset($_GET['joybanglacourseidxyz'])) {
+if (!isset($_SESSION['uid'])||!isset($_GET['enrolledcourses'])) {
 header("location: login.php");
 
 }

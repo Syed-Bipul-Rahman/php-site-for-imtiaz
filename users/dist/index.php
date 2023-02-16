@@ -3,7 +3,7 @@ session_start();
 
 if(!isset($_SESSION["uid"])){
     // User is already logged in, redirect to the home page
-       header("Location: ../../just.html");
+       header("Location: ../../login.php");
        exit();}
 ?>
 <!DOCTYPE html>
@@ -238,26 +238,63 @@ if(!isset($_SESSION["uid"])){
             </div>
 </a>
             <h1 class="text-2xl font-bold">In Progress Courses</h1>
-            <a href="../../video.php?joybanglacourseidxyz=something&somethign=something"> <div class="my-8">
+
+<?php 
+if (isset($_SESSION['uid'])) {
+   include('../../apis/connection.php');
+   $email=$_SESSION['uid'];
+   $sql = "SELECT `viewed_video`,`enrolledcourse` FROM `users` WHERE `email`='$email'";
+    $result = mysqli_query($conn, $sql);
+    $row = mysqli_fetch_assoc($result);
+   // echo $row['viewed_video'];
+
+    $viewed_video=$row['viewed_video'];
+    $enrolledcourse=$row['enrolledcourse'];
+
+
+    $fetchcoursedetails="SELECT `img`,`title` FROM `new_course` WHERE `course_number`=$enrolledcourse";
+    $fetchcoursedetailsresult=mysqli_query($conn,$fetchcoursedetails);
+    $fetchcoursedetailsrow=mysqli_fetch_assoc($fetchcoursedetailsresult);
+    $img=$fetchcoursedetailsrow['img'];
+    $ctitle=$fetchcoursedetailsrow['title'];
+
+
+
+// if($result){
+//     while($row = mysqli_fetch_assoc($result)){
+//         $viewed_video=$row['viewed_video'];
+//         $enrolledcourse=$row['enrolledcourse'];
+
+//         $sql = "SELECT * FROM `new_course` WHERE `course_number`='$enrolledcourse'";
+//     }
+// }
+?>
+
+
+            <a href="../../video.php?enrolledcourses=<?php echo $enrolledcourse; ?>&viewedvideo=<?php echo $viewed_video; ?>"> <div class="my-8">
                 <div class="my-4 border border-slate-300 rounded-lg lg:flex items-center justify-between">
                     <img class="lg:w-[35%]"
-                        src="https://th.bing.com/th/id/OIP.VhwWArRuUxrxhl6LzuFKFQHaEK?pid=ImgDet&rs=1" alt="">
+                        src="<?php echo $img; ?>" alt="Sohoz Learning">
                     <div class="lg:w-[65%] p-6">
                         <p><span class="text-orange-400 text-lg mx-2">
                                 <i class="uis uis-star"></i><i class="uis uis-star"></i><i class="uis uis-star"></i>
                                 <i class="uis uis-star"></i><i class="uil uil-star"></i>
                             </span>4.5</p>
-                        <h1 class="text-xl font-semibold my-2">Lorem ipsum dolor, sit amet consectetur adipisicing</h1>
-                        <h5>Completed Lessons : <strong>8 of 10 lessons</strong></h5>
+                        <h1 class="text-xl font-semibold my-2"><?php echo $ctitle; ?></h1>
+                        <h5>Completed Lessons : <strong><?php  echo $viewed_video; ?> of 100 lessons</strong></h5>
                         <div class="flex items-center">
                             <div class="w-full h-1 bg-orange-200 rounded-full">
                                 <div class="w-[20%] h-1 bg-orange-400 rounded-full"></div>
                             </div>
-                            <p class="ml-4"><strong class="mx-2">80%</strong>Complete</p>
+                            <p class="ml-4"><strong class="mx-2">0%</strong>Complete</p>
                         </div>
                     </div>
                 </div>
-            </div></a>
+            </div></a><?php
+
+}
+
+?>
         </div>
         <div id="profile" class="lg:p-6 lg:w-[80%] hidden aso">
             <h1 class="text-2xl font-bold">My Profile</h1>
