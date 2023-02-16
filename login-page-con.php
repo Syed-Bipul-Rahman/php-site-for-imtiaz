@@ -13,7 +13,7 @@ if (isset($_POST['sub'])) {
 
             $_SESSION["uid"] = $email;
             // $_SESSION['email'] = $email;
-            echo "<script>window.location.href='./user/dist/';</script>";
+            echo "<script>window.location.href='./users/dist/';</script>";
             exit();
         }
     } else {

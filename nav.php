@@ -94,7 +94,7 @@ session_start();
                             </div>'; 
                             }else {
                                 echo '<div class="hidden ml-8 px-6 bg-orange-500 py-2 rounded items-center font-semibold text-white lg:flex">
-                                <a class="border-r-2 px-3 hover:text-black" href="./user/dist">Dashbord</a>
+                                <a class="border-r-2 px-3 hover:text-black" href="./users/dist">Dashbord</a>
                                 <a class="px-3 hover:text-black" href="./apis/logout.php">Logout</a>
                             </div>';
                             }

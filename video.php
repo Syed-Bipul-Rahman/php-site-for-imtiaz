@@ -1,10 +1,35 @@
 <?php
+session_start();
+if (!isset($_SESSION['uid'])||!isset($_GET['joybanglacourseidxyz'])) {
+header("location: login.php");
 
-include './nav.php';
-
+}
 
 
 ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Ensure your career" />
+    <meta name="author" content="Sohoz Learning" />
+    <meta property="og:image" content="/joybanga.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    
+    <script src="https://kit.fontawesome.com/28381dd01b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/solid.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Sohoz Learning</title>
+ 
+</head>
+
+<body style="font-family: 'Rajdhani', sans-serif;">
 <section class="w-full px-0 xs:px-2 sm:px-6 lg:px-20 pt-20 bg-slate-100 text-lg font-medium flex justify-between">
     <P>Complete Trello Beginners to Advanced</P>
     <P>Your Progress: <span class="font-bold">0</span> of <span class="font-bold">10</span> (0%)</P>

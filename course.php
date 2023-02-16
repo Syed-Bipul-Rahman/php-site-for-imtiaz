@@ -233,7 +233,7 @@ include './nav.php';
                 $conn->close();
 
 ?>
-<div class="rounded-xl overflow-hidden w-full shadow-xl p-6 my-8">
+<!-- <div class="rounded-xl overflow-hidden w-full shadow-xl p-6 my-8">
     <h5 class="my-4 text-xl font-bold mx-1">Course Content</h5>
     <ul class="list-disc text-lg list-inside">
         <li>7.5 hours on-demand video</li>
@@ -243,7 +243,7 @@ include './nav.php';
         <li>Access on mobile and TV</li>
         <li>Certificate of Completion</li>
     </ul>
-</div>
+</div> -->
     </aside>
 </section>
 <?php

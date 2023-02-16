@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-if(isset($_SESSION["uid"])){
+if(!isset($_SESSION["uid"])){
     // User is already logged in, redirect to the home page
        header("Location: ../../just.html");
        exit();}
@@ -210,7 +210,7 @@ if(isset($_SESSION["uid"])){
         </ul>
         <div id="dashboard" class="py-6 lg:p-6 lg:w-[80%] w-full aso">
             <h1 class="text-2xl font-bold">Dashboard</h1>
-            <a href="./courses"> <div class="grid lg:grid-cols-3 gap-4 my-8">
+            <a href="../../video.php?joybanglacourseidxyz=something&somethign=something"> <div class="grid lg:grid-cols-3 gap-4 my-8">
                 <div class="p-6 border border-slate-300 rounded-lg text-center">
                     <div
                         class="rounded-full h-16 w-16 mx-auto text-orange-500 bg-orange-50 flex justify-center items-center">
@@ -238,7 +238,7 @@ if(isset($_SESSION["uid"])){
             </div>
 </a>
             <h1 class="text-2xl font-bold">In Progress Courses</h1>
-            <a href="./conditions"> <div class="my-8">
+            <a href="../../video.php?joybanglacourseidxyz=something&somethign=something"> <div class="my-8">
                 <div class="my-4 border border-slate-300 rounded-lg lg:flex items-center justify-between">
                     <img class="lg:w-[35%]"
                         src="https://th.bing.com/th/id/OIP.VhwWArRuUxrxhl6LzuFKFQHaEK?pid=ImgDet&rs=1" alt="">
@@ -288,7 +288,7 @@ if(isset($_SESSION["uid"])){
             <h1 class="text-2xl font-bold">Enrolled Courses</h1>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:grid-cols-3 my-8">
                 <div class="rounded-xl overflow-hidden border border-slate-300">
-                    <a href="./course.php?courseid=somthing&amp;joybanglacourseidxyz=Mw==&amp;coursename=something"><img
+                    <a href="../../video.php?joybanglacourseidxyz=something&somethign=something"><img
                             loading="lazy" class="w-full"
                             src="https://th.bing.com/th/id/OIP.VhwWArRuUxrxhl6LzuFKFQHaEK?pid=ImgDet&rs=1"
                             alt="Basic photography"></a>
@@ -301,7 +301,7 @@ if(isset($_SESSION["uid"])){
                             <h4 class="mx-4 font-semibold">4.5</h4>
                             <p class="text-slate-600 font-medium">(114)</p>
                         </div>
-                        <a href="./course.php?joybanglacourseidxyz=Mw==">
+                        <a href="../../video.php?joybanglacourseidxyz=something&somethign=something">
                             <h1 class="font-bold text-xl mt-3 mb-8 hover:text-orange-500">Basic photography</h1>
                         </a>
                         <div>

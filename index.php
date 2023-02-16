@@ -1,7 +1,6 @@
 <?php
-
 include './nav.php';
-
+include_once('usr-details.php');
 
 
 ?>
