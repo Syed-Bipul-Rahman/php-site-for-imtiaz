@@ -259,7 +259,7 @@ VALUES (NULL, '$name', '$email', '$haspass', current_timestamp());";
 
         if (mysqli_query($conn, $insert_query)) {
             // Data inserted successfully, redirect to success page
-            $_SESSION['uid'] = $name;
+            $_SESSION['uid'] = $email;
             echo '<script>window.location.href = "./";</script>';
         } else {
             // Error inserting data, set an error message in the session

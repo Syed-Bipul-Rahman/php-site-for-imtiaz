@@ -70,7 +70,8 @@ if ($top1==""||$top2==""||$top3==""||$top4==""||$top5==""||$top6=="") {
         $result = $conn->query($query);
     
         if ($result == 1) {
-            header("location: ./course-content-addiba-na.php?page=1&courseidvao=".base64_encode(urlencode($getidsvao)));
+            $getidsvao=base64_encode(urlencode($getidsvao));
+            header("location: ./course-content-addiba-na.php?page=1&courseidvao=".$getidsvao);
         }
     
 }

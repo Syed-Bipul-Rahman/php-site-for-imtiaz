@@ -19,7 +19,8 @@ if (!isset($_SESSION["uid"])) {
     <meta property="og:image" content="../../joybanga.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 
     <script src="https://kit.fontawesome.com/28381dd01b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
@@ -31,18 +32,24 @@ if (!isset($_SESSION["uid"])) {
 </head>
 
 <body style="font-family: 'Rajdhani', sans-serif;">
-    <nav id="nav z-10" class="flex w-full px-0 py-0 xs:py-1 sm:py-2 md:py-3 justify-between bg-white items-center fixed xs:px-2 sm:px-4 md:px-8 lg:px-12 xl:20">
+    <nav id="nav z-10"
+        class="flex w-full px-0 py-0 xs:py-1 sm:py-2 md:py-3 justify-between bg-white items-center fixed xs:px-2 sm:px-4 md:px-8 lg:px-12 xl:20">
         <a href="./"><img loading="lazy" class="h-10" src="../../logo.png" alt="Sohoz Leaning"></a>
         <div class="flex">
             <div class="lg:hidden my-2 md:my-1">
-                <a href="../../login.php"><i class="fa-solid fa-user bg-orange-500 text-white p-2 md:p-3 mx-1 xs:mx-2 rounded-md"></i></a>
-                <i class="fa-solid border border-orange-500 md:p-3 fa-bars p-2 rounded-md" onclick="var mobail = document.getElementById('m-manu').style;if(mobail.right=='-2000px'){mobail.right='0px'}else{mobail.right='-2000px'}"></i>
+                <a href="../../login.php"><i
+                        class="fa-solid fa-user bg-orange-500 text-white p-2 md:p-3 mx-1 xs:mx-2 rounded-md"></i></a>
+                <i class="fa-solid border border-orange-500 md:p-3 fa-bars p-2 rounded-md"
+                    onclick="var mobail = document.getElementById('m-manu').style;if(mobail.right=='-2000px'){mobail.right='0px'}else{mobail.right='-2000px'}"></i>
             </div>
             <ul class="items-center text-lg hidden lg:flex">
-                <li class="mx-4 font-bold flex items-center hover:text-orange-600 h-10 drop"><a href="../../courses.php">Courses</a>
+                <li class="mx-4 font-bold flex items-center hover:text-orange-600 h-10 drop"><a
+                        href="../../courses.php">Courses</a>
                     <i class="fa-solid fa-chevron-down ml-1"></i>
-                    <ul class="absolute rounded-md border-orange-600 w-28 z-10 bg-white mt-36 sdrop shadow-xl truncate transition-all h-0">
-                        <li class="px-3 py-1 text-black hover:text-orange-600 di1"><a href="../../courses.php">Android</a>
+                    <ul
+                        class="absolute rounded-md border-orange-600 w-28 z-10 bg-white mt-36 sdrop shadow-xl truncate transition-all h-0">
+                        <li class="px-3 py-1 text-black hover:text-orange-600 di1"><a
+                                href="../../courses.php">Android</a>
                             <!-- <ul
                                 class="rounded-md border-t-2 bg-white border-orange-600 z-10 absolute -mt-8 text-black hidden dis1 shadow-xl">
                                 <li class="px-3 py-1 hover:text-orange-600"><a href="">Season 1</a></li>
@@ -51,7 +58,8 @@ if (!isset($_SESSION["uid"])) {
                             </ul> -->
                         </li>
                         <hr>
-                        <li class="px-3 py-1 text-black hover:text-orange-600 di1"><a href="../../courses.php">Graphices</a>
+                        <li class="px-3 py-1 text-black hover:text-orange-600 di1"><a
+                                href="../../courses.php">Graphices</a>
                             <!-- <ul
                                 class="rounded-md bg-white border-t-2 border-orange-600 z-10 absolute -mt-8 text-black hidden dis1 shadow-xl">
                                 <li class="px-3 py-1 hover:text-orange-600"><a href="">Season 3</a></li>
@@ -75,8 +83,10 @@ if (!isset($_SESSION["uid"])) {
                 <li class="mx-4 font-bold hover:text-orange-600"> <a href="../../about.php">About Us</a> </li>
                 <li class="mx-4 font-bold hover:text-orange-600"> <a href="../../contact.php">Contact</a> </li>
                 <a href="../../cart.php">
-                    <li class="mx-4 font-bold hover:text-orange-600 cursor-pointer text-2xl flex"><i class="fa-solid fa-cart-shopping"></i>
-                        <div class="h-5 w-5 bg-orange-500 rounded-full -ml-1 -mt-2 flex items-center justify-center text-sm text-white">
+                    <li class="mx-4 font-bold hover:text-orange-600 cursor-pointer text-2xl flex"><i
+                            class="fa-solid fa-cart-shopping"></i>
+                        <div
+                            class="h-5 w-5 bg-orange-500 rounded-full -ml-1 -mt-2 flex items-center justify-center text-sm text-white">
                             <?php
                             if (isset($_SESSION['xcartcoursex'])) {
                                 echo '<p>1</p>';
@@ -103,16 +113,20 @@ if (!isset($_SESSION["uid"])) {
 
 
         </div>
-        <div id="m-manu" style="right: -2000px;top: 70px;height: 85vh;width: 85vw;border-bottom-left-radius: 20px;background: linear-gradient(#fff,#7fffd4);" class="flex-col absolute">
+        <div id="m-manu"
+            style="right: -2000px;top: 70px;height: 85vh;width: 85vw;border-bottom-left-radius: 20px;background: linear-gradient(#fff,#7fffd4);"
+            class="flex-col absolute">
 
             <ul class=" text-2xl">
                 <li class="mx-4 my-4 font-semibold">
-                    <div onclick="var c=document.getElementById('cata-nav'); if(c.classList[1]=='hidden'){c.classList.remove('hidden');}else{c.classList.add('hidden')}" class="flex justify-between mr-4 items-center"><a href="./courses.php">Courses</a>
+                    <div onclick="var c=document.getElementById('cata-nav'); if(c.classList[1]=='hidden'){c.classList.remove('hidden');}else{c.classList.add('hidden')}"
+                        class="flex justify-between mr-4 items-center"><a href="./courses.php">Courses</a>
                         <i class="fa-solid fa-chevron-down ml-1"></i>
                     </div>
                     <ul id="cata-nav" class="mx-4 hidden">
                         <a href="./courses.php">
-                            <li onclick="var c=document.getElementById('cata-1'); if(c.classList[1]=='hidden'){c.classList.remove('hidden');}else{c.classList.add('hidden')}" class="my-3 cursor-pointer">Android
+                            <li onclick="var c=document.getElementById('cata-1'); if(c.classList[1]=='hidden'){c.classList.remove('hidden');}else{c.classList.add('hidden')}"
+                                class="my-3 cursor-pointer">Android
                                 <!-- <i class="fa-solid fa-chevron-down mx-4"></i> -->
                                 <!-- <ul id="cata-1" class="mx-4 hidden">
                                 <li class="my-2">sieson-1</li>
@@ -121,7 +135,8 @@ if (!isset($_SESSION["uid"])) {
                             </li>
                         </a>
                         <a href="./courses.php">
-                            <li onclick="var c=document.getElementById('cata-2'); if(c.classList[1]=='hidden'){c.classList.remove('hidden');}else{c.classList.add('hidden')}" class="my-3 cursor-pointer">Graphics
+                            <li onclick="var c=document.getElementById('cata-2'); if(c.classList[1]=='hidden'){c.classList.remove('hidden');}else{c.classList.add('hidden')}"
+                                class="my-3 cursor-pointer">Graphics
                                 <!-- <i class="fa-solid fa-chevron-down mx-4"></i> -->
                                 <!-- <ul id="cata-2" class="mx-4 hidden">
                                 <li class="my-2">sieson-1</li>
@@ -151,7 +166,8 @@ if (!isset($_SESSION["uid"])) {
                 <a href="./cart.php">
                     <li class="mx-4 my-4 font-semibold  cursor-pointer text-2xl flex">Cart
                         <i class="fa-solid fa-cart-shopping"></i>
-                        <div class="h-5 w-5 bg-orange-500 rounded-full -ml-1 -mt-2 flex items-center justify-center text-sm text-white">
+                        <div
+                            class="h-5 w-5 bg-orange-500 rounded-full -ml-1 -mt-2 flex items-center justify-center text-sm text-white">
                             <?php
                             if (isset($_SESSION['xcartcoursex'])) {
                                 echo '<p>1</p>';
@@ -186,7 +202,8 @@ if (!isset($_SESSION["uid"])) {
 
 
     <section class="px-0 xs:px-2 sm:px-6 lg:px-20 pt-20 flex items-center border border-b-slate-300">
-        <img class="rounded-full m-8" height="100px" width="100px" src="https://demo.omexer.com/main/wp-content/uploads/sites/3/2022/11/OIP-1-150x150.jpg" alt="">
+        <img class="rounded-full m-8" height="100px" width="100px"
+            src="https://demo.omexer.com/main/wp-content/uploads/sites/3/2022/11/OIP-1-150x150.jpg" alt="">
         <div>
             <h4 class="text-xl">Hello</h4>
             <h1 class="text-2xl">name</h1>
@@ -194,17 +211,24 @@ if (!isset($_SESSION["uid"])) {
     </section>
     <section class="px-0 xs:px-2 sm:px-6 lg:px-20 lg:flex">
         <ul class="lg:w-[20%] w-full border-r border-slate-300 py-8 text-lg font-medium">
-            <li class="py-2 cursor-pointer my-1 rounded-l-md bg-orange-500 text-white"><i class="uil text-xl uil-dashboard mx-2"></i>Dashboard</li>
-            <li class="py-2 cursor-pointer my-1 rounded-l-md hover:bg-orange-200"><i class="uil text-xl uil-user mx-2"></i>My Profile</li>
-            <li class="py-2 cursor-pointer my-1 rounded-l-md hover:bg-orange-200"><i class="uil text-xl uil-graduation-cap mx-2"></i>Enrolled Courses</li>
+            <li class="py-2 cursor-pointer my-1 rounded-l-md bg-orange-500 text-white"><i
+                    class="uil text-xl uil-dashboard mx-2"></i>Dashboard</li>
+            <li class="py-2 cursor-pointer my-1 rounded-l-md hover:bg-orange-200"><i
+                    class="uil text-xl uil-user mx-2"></i>My Profile</li>
+            <li class="py-2 cursor-pointer my-1 rounded-l-md hover:bg-orange-200"><i
+                    class="uil text-xl uil-graduation-cap mx-2"></i>Enrolled Courses</li>
 
-            <li class="py-2 cursor-pointer my-1 rounded-l-md hover:bg-orange-200"><i class="uil text-xl uil-star mx-2"></i>Reviews</li>
-            <li class="py-2 cursor-pointer my-1 rounded-l-md hover:bg-orange-200"><i class="uil text-xl uil-shield-question mx-2"></i>My Quiz</li>
+            <li class="py-2 cursor-pointer my-1 rounded-l-md hover:bg-orange-200"><i
+                    class="uil text-xl uil-star mx-2"></i>Reviews</li>
+            <li class="py-2 cursor-pointer my-1 rounded-l-md hover:bg-orange-200"><i
+                    class="uil text-xl uil-shield-question mx-2"></i>My Quiz</li>
 
-            <li class="py-2 cursor-pointer my-1 rounded-l-md hover:bg-orange-200"><i class="uil text-xl uil-question mx-2"></i>Question & Answer</li>
+            <li class="py-2 cursor-pointer my-1 rounded-l-md hover:bg-orange-200"><i
+                    class="uil text-xl uil-question mx-2"></i>Question & Answer</li>
             <hr>
             <a href="../../apis/logout.php">
-                <li class="py-2 cursor-pointer my-1 rounded-l-md hover:bg-orange-200"><i class="uil uil-signout text-xl mx-2"></i>Logout</li>
+                <li class="py-2 cursor-pointer my-1 rounded-l-md hover:bg-orange-200"><i
+                        class="uil uil-signout text-xl mx-2"></i>Logout</li>
             </a>
         </ul>
         <div id="dashboard" class="py-6 lg:p-6 lg:w-[80%] w-full aso">
@@ -212,21 +236,24 @@ if (!isset($_SESSION["uid"])) {
             <a href="../../video.php?joybanglacourseidxyz=something&somethign=something">
                 <div class="grid lg:grid-cols-3 gap-4 my-8">
                     <div class="p-6 border border-slate-300 rounded-lg text-center">
-                        <div class="rounded-full h-16 w-16 mx-auto text-orange-500 bg-orange-50 flex justify-center items-center">
+                        <div
+                            class="rounded-full h-16 w-16 mx-auto text-orange-500 bg-orange-50 flex justify-center items-center">
                             <i class="uil uil-book-open text-2xl"></i>
                         </div>
                         <h4 class="text-3xl font-bold my-2">1</h4>
                         <p>Enrolled Courses</p>
                     </div>
                     <div class="p-6 border border-slate-300 rounded-lg text-center">
-                        <div class="rounded-full mx-auto h-16 w-16 text-orange-500 bg-orange-50 flex justify-center items-center">
+                        <div
+                            class="rounded-full mx-auto h-16 w-16 text-orange-500 bg-orange-50 flex justify-center items-center">
                             <i class="uil uil-graduation-cap text-2xl"></i>
                         </div>
                         <h4 class="text-3xl font-bold my-2">1</h4>
                         <p>Active Courses</p>
                     </div>
                     <div class="p-6 border border-slate-300 rounded-lg text-center">
-                        <div class="rounded-full mx-auto h-16 w-16 text-orange-500 bg-orange-50 flex justify-center items-center">
+                        <div
+                            class="rounded-full mx-auto h-16 w-16 text-orange-500 bg-orange-50 flex justify-center items-center">
                             <i class="uil uil-trophy text-2xl"></i>
                         </div>
                         <h4 class="text-3xl font-bold my-2">0</h4>
@@ -265,31 +292,35 @@ if (!isset($_SESSION["uid"])) {
                 //         $sql = "SELECT * FROM `new_course` WHERE `course_number`='$enrolledcourse'";
                 //     }
                 // }
+                if($enrolledcourse>0){
             ?>
 
 
-                <a href="../../video.php?enrolledcourses=<?php echo $enrolledcourse; ?>&viewedvideo=<?php echo $viewed_video; ?>">
-                    <div class="my-8">
-                        <div class="my-4 border border-slate-300 rounded-lg lg:flex items-center justify-between">
-                            <img class="lg:w-[35%]" src="<?php echo $img; ?>" alt="Sohoz Learning">
-                            <div class="lg:w-[65%] p-6">
-                                <p><span class="text-orange-400 text-lg mx-2">
-                                        <i class="uis uis-star"></i><i class="uis uis-star"></i><i class="uis uis-star"></i>
-                                        <i class="uis uis-star"></i><i class="uil uil-star"></i>
-                                    </span>4.5</p>
-                                <h1 class="text-xl font-semibold my-2"><?php echo $ctitle; ?></h1>
-                                <h5>Completed Lessons : <strong><?php echo $viewed_video; ?> of 100 lessons</strong></h5>
-                                <div class="flex items-center">
-                                    <div class="w-full h-1 bg-orange-200 rounded-full">
-                                        <div class="w-[20%] h-1 bg-orange-400 rounded-full"></div>
-                                    </div>
-                                    <p class="ml-4"><strong class="mx-2">0%</strong>Complete</p>
+            <a
+                href="../../video.php?enrolledcourses=<?php echo $enrolledcourse; ?>&viewedvideo=<?php echo $viewed_video; ?>">
+                <div class="my-8">
+                    <div class="my-4 border border-slate-300 rounded-lg lg:flex items-center justify-between">
+                        <img class="lg:w-[35%]" src="<?php echo $img; ?>" alt="Sohoz Learning">
+                        <div class="lg:w-[65%] p-6">
+                            <p><span class="text-orange-400 text-lg mx-2">
+                                    <i class="uis uis-star"></i><i class="uis uis-star"></i><i class="uis uis-star"></i>
+                                    <i class="uis uis-star"></i><i class="uil uil-star"></i>
+                                </span>4.5</p>
+                            <h1 class="text-xl font-semibold my-2"><?php echo $ctitle; ?></h1>
+                            <h5>Completed Lessons : <strong><?php echo $viewed_video; ?> of 100 lessons</strong></h5>
+                            <div class="flex items-center">
+                                <div class="w-full h-1 bg-orange-200 rounded-full">
+                                    <div class="w-[20%] h-1 bg-orange-400 rounded-full"></div>
                                 </div>
+                                <p class="ml-4"><strong class="mx-2">0%</strong>Complete</p>
                             </div>
                         </div>
                     </div>
-                </a><?php
-
+                </div>
+            </a><?php
+                }else{
+                    echo "no course enrolled";
+                }
                 }
 
                     ?>
@@ -299,23 +330,48 @@ if (!isset($_SESSION["uid"])) {
             <div class="flex justify-between lg:justify-start">
                 <div class="w-[25%]">
                     <p class="text-lg my-4 font-medium">Registration Date</p>
-                    <p class="text-lg my-4 font-medium">First Name</p>
-                    <p class="text-lg my-4 font-medium">Last Name</p>
-                    <p class="text-lg my-4 font-medium">Username</p>
+                    <p class="text-lg my-4 font-medium">Full Name</p>
+                    <!-- <p class="text-lg my-4 font-medium">Last Name</p>
+                    <p class="text-lg my-4 font-medium">Username</p> -->
                     <p class="text-lg my-4 font-medium">Email</p>
-                    <p class="text-lg my-4 font-medium">Phone Number</p>
+                    <!-- <p class="text-lg my-4 font-medium">Phone Number</p>
                     <p class="text-lg my-4 font-medium">Skill/Occupation</p>
-                    <p class="text-lg my-4 font-medium">Biography</p>
+                    <p class="text-lg my-4 font-medium">Biography</p> -->
                 </div>
                 <div>
-                    <p class="text-lg my-4 font-semibold">June 10, 2022 10:10 pm</p>
-                    <p class="text-lg my-4 font-semibold">MR.</p>
-                    <p class="text-lg my-4 font-semibold">Bangladesh</p>
-                    <p class="text-lg my-4 font-semibold">admin</p>
-                    <p class="text-lg my-4 font-semibold">admin@admin.com</p>
-                    <p class="text-lg my-4 font-semibold">01792932818</p>
-                    <p class="text-lg my-4 font-semibold">Mobile apps Publisher</p>
+                    <!-- dynamic profile fetch from database -->
+
+                    <?php 
+include('../../apis/connection.php');
+$email = $_SESSION['uid'];
+$sqleee ="SELECT `name`,`email`,`registered_on` FROM `users` WHERE `email`='$email'";
+
+$result = $conn->query($sqleee);
+
+    if ($result->num_rows > 0) {
+        while ($row = $result->fetch_assoc()) {
+
+?>
+                    <p class="text-lg my-4 font-semibold"><?php echo $row['registered_on']; ?></p>
+                    <p class="text-lg my-4 font-semibold"><?php echo $row['name']; ?></p>
+                    <!-- <p class="text-lg my-4 font-semibold">Bangladesh</p>
+                    <p class="text-lg my-4 font-semibold">admin</p> -->
+                    <p class="text-lg my-4 font-semibold"><?php echo $row['email']; ?></p>
+                    <!-- <p class="text-lg my-4 font-semibold">01792932818</p> -->
+                    <!-- <p class="text-lg my-4 font-semibold">Mobile apps Publisher</p>
                     <p class="text-lg my-4 font-semibold">We are not hacker</p>
+                 -->
+                <?php
+
+
+        }
+    
+    }else{
+        echo "user not found";
+    }
+                ?>
+                
+                
                 </div>
             </div>
         </div>
@@ -343,39 +399,44 @@ if (!isset($_SESSION["uid"])) {
                 $fetchcoursedetailsrow = mysqli_fetch_assoc($fetchcoursedetailsresult);
                 $img = $fetchcoursedetailsrow['img'];
                 $ctitle = $fetchcoursedetailsrow['title'];
+                if($enrolledcourse>0){
             ?>
 
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:grid-cols-3 my-8">
-                    <div class="rounded-xl overflow-hidden border border-slate-300">
-                        <a href="../../video.php?enrolledcourses=<?php echo $enrolledcourse; ?>&viewedvideo=<?php echo $viewed_video; ?>"><img loading="lazy" class="w-full" src="<?php echo $img; ?>" alt="Sohoz Leaning"></a>
-                        <div class="p-4">
-                            <div class="flex text-lg">
-                                <span class="text-orange-400">
-                                    <i class="uis uis-star"></i><i class="uis uis-star"></i><i class="uis uis-star"></i>
-                                    <i class="uis uis-star"></i><i class="uil uil-star"></i>
-                                </span>
-                                <h4 class="mx-4 font-semibold">4.5</h4>
-                                <!-- <p class="text-slate-600 font-medium">(114)</p> -->
-                            </div>
-                            <a href="../../video.php?enrolledcourses=<?php echo $enrolledcourse; ?>&viewedvideo=<?php echo $viewed_video; ?>">
-                                <h1 class="font-bold text-xl mt-3 mb-8 hover:text-orange-500"><?php echo $ctitle; ?></h1>
-                            </a>
-                            <div>
-                                <h1 class="flex justify-between font-medium my-2">
-                                    <p><?php echo $viewed_video; ?>/100</p>
-                                    <p>0% Complete</p>
-                                </h1>
-                                <div class="w-full h-1 bg-slate-200 rounded-full">
-                                    <div class="w-[70%] h-1 bg-orange-400 rounded-full"></div>
-                                </div>
-                            </div>
-                            <a href="../../video.php?enrolledcourses=<?php echo $enrolledcourse; ?>&viewedvideo=<?php echo $viewed_video; ?>" class="border border-orange-500 rounded-lg text-lg font-semibold mt-4 flex items-center justify-center text-orange-500 py-2 hover:bg-orange-500 hover:text-white">
-                                Start Learning</a>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:grid-cols-3 my-8">
+                <div class="rounded-xl overflow-hidden border border-slate-300">
+                    <a
+                        href="../../video.php?enrolledcourses=<?php echo $enrolledcourse; ?>&viewedvideo=<?php echo $viewed_video; ?>"><img
+                            loading="lazy" class="w-full" src="<?php echo $img; ?>" alt="Sohoz Leaning"></a>
+                    <div class="p-4">
+                        <div class="flex text-lg">
+                            <span class="text-orange-400">
+                                <i class="uis uis-star"></i><i class="uis uis-star"></i><i class="uis uis-star"></i>
+                                <i class="uis uis-star"></i><i class="uil uil-star"></i>
+                            </span>
+                            <h4 class="mx-4 font-semibold">4.5</h4>
+                            <!-- <p class="text-slate-600 font-medium">(114)</p> -->
                         </div>
+                        <a
+                            href="../../video.php?enrolledcourses=<?php echo $enrolledcourse; ?>&viewedvideo=<?php echo $viewed_video; ?>">
+                            <h1 class="font-bold text-xl mt-3 mb-8 hover:text-orange-500"><?php echo $ctitle; ?></h1>
+                        </a>
+                        <div>
+                            <h1 class="flex justify-between font-medium my-2">
+                                <p><?php echo $viewed_video; ?>/100</p>
+                                <p>0% Complete</p>
+                            </h1>
+                            <div class="w-full h-1 bg-slate-200 rounded-full">
+                                <div class="w-[70%] h-1 bg-orange-400 rounded-full"></div>
+                            </div>
+                        </div>
+                        <a href="../../video.php?enrolledcourses=<?php echo $enrolledcourse; ?>&viewedvideo=<?php echo $viewed_video; ?>"
+                            class="border border-orange-500 rounded-lg text-lg font-semibold mt-4 flex items-center justify-center text-orange-500 py-2 hover:bg-orange-500 hover:text-white">
+                            Start Learning</a>
                     </div>
+                </div>
 
 
-                    <!-- <div class="rounded-xl overflow-hidden border border-slate-300">
+                <!-- <div class="rounded-xl overflow-hidden border border-slate-300">
                     <a href="./course.php?courseid=somthing&amp;joybanglacourseidxyz=Mw==&amp;coursename=something"><img
                             loading="lazy" class="w-full"
                             src="https://th.bing.com/th/id/R.b695ec6c406ee257c3da38626c63d55d?rik=LmhrfS4weqpqYg&amp;pid=ImgRaw&amp;r=0"
@@ -406,11 +467,13 @@ if (!isset($_SESSION["uid"])) {
                             Start Learning</a>
                     </div>
                 </div> -->
-                </div>
+            </div>
 
 
             <?php
-
+}
+            }else{
+                echo "You have not enrolled any course yet.";
             }
 
             ?>
@@ -422,7 +485,7 @@ if (!isset($_SESSION["uid"])) {
         const aso = document.querySelectorAll(".aso");
 
         classList.forEach(button => {
-            button.addEventListener("click", function() {
+            button.addEventListener("click", function () {
                 classList.forEach(btn => {
                     btn.classList.remove("bg-orange-500");
                     btn.classList.remove("text-white");

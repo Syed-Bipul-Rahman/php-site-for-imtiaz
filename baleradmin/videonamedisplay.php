@@ -1,8 +1,7 @@
 <?php
 
 if($_GET['page'] == 7){
-    $getidsvao=$_GET['courseidvao'];
-    header("location: videonamedisplay.php?courseid=".$getidsvao);
+    header("location: videonamedisplay.php");
 }
 ?>
 <!DOCTYPE html>
@@ -15,7 +14,7 @@ if($_GET['page'] == 7){
     <title>topics| @usrname</title>
     <link rel="stylesheet" href="../style.css">
 </head>
-
+z
 <body>
     <form style="box-shadow: 0px 0px 16px 0px #d1d0d0;" class=" gap-4 w-full p-1 xs:p-2 sm:p-6 md:p-16 rounded-xl"
         action="" method="post">
@@ -36,7 +35,7 @@ if($_GET['page'] == 7){
             <div class="flex justify-start items-center"><button name="addtopics"
                     class="uppercase py-3 px-8 bg-orange-600 hover:bg-blue-900 text-white font-bold rounded-md transition-all duration-300"
                     type="submit">Add Content</button></div>
-            <a href="videonamedisplay.php?courseid=<?php echo $getidsvao=$_GET['courseidvao']; ?>">
+            <a href="./videonamedisplay.php">
                 <div class="flex py-3 justify-start items-center"><input style="background-color:green;"
                         class="uppercase cursor-pointer py-3 px-8 hover:bg-blue-900 text-white font-bold rounded-md transition-all duration-300"
                         type="" value="Done"/></div>
@@ -71,7 +70,7 @@ if ($top1=="") {
             $j=$_GET['page'];
 
             $i=$j+1;
-            header("location: ./videonamedisplay.php?courseid=".$getidsvao);
+            header("location: ./course-content-addiba-na.php?courseidvao=".base64_encode(urlencode($getidsvao))."&page=".$i);
         }
     
 }
