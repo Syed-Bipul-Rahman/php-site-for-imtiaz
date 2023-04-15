@@ -11,17 +11,17 @@ $name="nai";
 // $name = $_POST['name'];
 
 // Instantiate PHPMailer object
-$mail = new PHPMailer\PHPMailer\PHPMailer(true);
+//$mail = new PHPMailer\PHPMailer\PHPMailer(true);
 
 try {
     // SMTP configuration
     $mail->isSMTP();
-    $mail->Host       = 'smtp.gmail.com';
+    $mail->Host       = 'smtp-relay.sendinblue.com';
     $mail->SMTPAuth   = true;
-    $mail->Username   = 'purni1majahan2@gmail.com';
-    $mail->Password   = '*******';
+    $mail->Username   = 'purnimajahan2@gmail.com';
+    $mail->Password   = 'OnNqAtg8XfaryPD5';
     $mail->SMTPSecure = 'ssl';
-    $mail->Port       = 465;
+    $mail->Port       = 587;
 
     // Sender and recipient
     $mail->setFrom('purnimajahan2@gmail.com', 'Sohoz Learning');
