@@ -115,7 +115,7 @@ include './nav.php';
     </div> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
 
-    <div class="swiper mySwiper">
+    <div style="z-index: -100;" class="swiper mySwiper">
         <div class="swiper-wrapper">
             
             <div class="swiper-slide p-6">
